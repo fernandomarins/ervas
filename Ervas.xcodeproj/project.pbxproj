@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55045B8D24A9533400715FB2 /* DisplayHerb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerb.swift */; };
 		558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085B24A94C080052C1EB /* AppDelegate.swift */; };
 		558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085D24A94C080052C1EB /* SceneDelegate.swift */; };
-		558D086024A94C080052C1EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085F24A94C080052C1EB /* ViewController.swift */; };
+		558D086024A94C080052C1EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085F24A94C080052C1EB /* MainViewController.swift */; };
 		558D086324A94C080052C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558D086124A94C080052C1EB /* Main.storyboard */; };
 		558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 558D086424A94C080052C1EB /* Ervas.xcdatamodeld */; };
 		558D086824A94C090052C1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558D086724A94C090052C1EB /* Assets.xcassets */; };
 		558D086B24A94C090052C1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558D086924A94C090052C1EB /* LaunchScreen.storyboard */; };
 		558D087624A94C090052C1EB /* ErvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D087524A94C090052C1EB /* ErvasTests.swift */; };
 		558D088124A94C0A0052C1EB /* ErvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D088024A94C0A0052C1EB /* ErvasUITests.swift */; };
+		558D088F24A94D950052C1EB /* Erva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D088E24A94D950052C1EB /* Erva.swift */; };
+		558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D089024A94EDF0052C1EB /* ErvasList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55045B8C24A9533400715FB2 /* DisplayHerb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerb.swift; sourceTree = "<group>"; };
 		558D085824A94C080052C1EB /* Ervas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ervas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558D085B24A94C080052C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558D085D24A94C080052C1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		558D085F24A94C080052C1EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		558D085F24A94C080052C1EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		558D086224A94C080052C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		558D086524A94C080052C1EB /* Ervas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ervas.xcdatamodel; sourceTree = "<group>"; };
 		558D086724A94C090052C1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		558D087C24A94C0A0052C1EB /* ErvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		558D088024A94C0A0052C1EB /* ErvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErvasUITests.swift; sourceTree = "<group>"; };
 		558D088224A94C0A0052C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558D088E24A94D950052C1EB /* Erva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erva.swift; sourceTree = "<group>"; };
+		558D089024A94EDF0052C1EB /* ErvasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErvasList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,11 @@
 			children = (
 				558D085B24A94C080052C1EB /* AppDelegate.swift */,
 				558D085D24A94C080052C1EB /* SceneDelegate.swift */,
-				558D085F24A94C080052C1EB /* ViewController.swift */,
+				558D085F24A94C080052C1EB /* MainViewController.swift */,
 				558D086124A94C080052C1EB /* Main.storyboard */,
+				55045B8C24A9533400715FB2 /* DisplayHerb.swift */,
+				558D088E24A94D950052C1EB /* Erva.swift */,
+				558D089024A94EDF0052C1EB /* ErvasList.swift */,
 				558D086724A94C090052C1EB /* Assets.xcassets */,
 				558D086924A94C090052C1EB /* LaunchScreen.storyboard */,
 				558D086C24A94C090052C1EB /* Info.plist */,
@@ -262,10 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558D086024A94C080052C1EB /* ViewController.swift in Sources */,
+				558D088F24A94D950052C1EB /* Erva.swift in Sources */,
+				558D086024A94C080052C1EB /* MainViewController.swift in Sources */,
+				55045B8D24A9533400715FB2 /* DisplayHerb.swift in Sources */,
 				558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */,
 				558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,
+				558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
