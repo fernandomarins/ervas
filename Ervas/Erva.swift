@@ -19,5 +19,4 @@ struct Erva {
     var precaucoes: String = ""
     var doses: String = ""
     var toxidez: String = ""
-    var categoria: String = ""
 }
