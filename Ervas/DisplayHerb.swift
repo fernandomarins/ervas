@@ -16,12 +16,8 @@ class DisplayHerb: UIViewController {
     @IBOutlet weak var propriedades: UILabel?
     @IBOutlet weak var locaisAcao: UILabel?
     @IBOutlet weak var funcoes: UITextView?
-    @IBOutlet weak var precaucoes: UITextView?
     @IBOutlet weak var doses: UILabel?
-    @IBOutlet weak var toxidez: UITextView?
     @IBOutlet weak var funcoesHC: NSLayoutConstraint?
-    @IBOutlet weak var preocaucoesHC: NSLayoutConstraint?
-    @IBOutlet weak var toxidezHC: NSLayoutConstraint?
     
     var herb: Erva!
     
@@ -34,17 +30,20 @@ class DisplayHerb: UIViewController {
         locaisAcao?.text = herb.locaisAcao
         funcoes?.text = herb.funcoes
         funcoesHC?.constant = funcoes!.contentSize.height
-        precaucoes?.text = herb.precaucoes
-        preocaucoesHC?.constant = precaucoes!.contentSize.height
         doses?.text = herb.doses
-        toxidez?.text = herb.toxidez
-        toxidezHC?.constant = toxidez!.contentSize.height
         
         setSizeToFit()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moreInfo" {
+            let vc = segue.destination as! MoreInfoViewController
+            vc.herb = herb
+        }
+    }
+    
     func setSizeToFit() {
-        let list = [nome, nomeFarmacologico, nomeCientifico, parteUtilizada, propriedades, locaisAcao, funcoes, precaucoes, doses, toxidez]
+        let list = [nome, nomeFarmacologico, nomeCientifico, parteUtilizada, propriedades, locaisAcao, funcoes, doses]
         for list in list {
             list?.sizeToFit()
         }
