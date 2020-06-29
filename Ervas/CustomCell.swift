@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
+class CustomCell: UITableViewCell {
+    
+    @IBOutlet weak var nome: UILabel!
+    @IBOutlet weak var locaisAcao: UILabel!
+    @IBOutlet weak var propriedades: UILabel!
+    
+}

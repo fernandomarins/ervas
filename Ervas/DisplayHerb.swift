@@ -10,9 +10,7 @@ import UIKit
 
 class DisplayHerb: UIViewController {
     @IBOutlet weak var nome: UILabel?
-    @IBOutlet weak var nomeFarmacologico: UILabel?
     @IBOutlet weak var nomeCientifico: UILabel?
-    @IBOutlet weak var parteUtilizada: UILabel?
     @IBOutlet weak var propriedades: UILabel?
     @IBOutlet weak var locaisAcao: UILabel?
     @IBOutlet weak var funcoes: UITextView?
@@ -23,9 +21,7 @@ class DisplayHerb: UIViewController {
     
     override func viewDidLoad() {
         nome?.text = herb.nome
-        nomeFarmacologico?.text = herb.nomeFarmacologico
         nomeCientifico?.text = herb.nomeCientifico
-        parteUtilizada?.text = herb.parteUtilizada
         propriedades?.text = herb.propriedades
         locaisAcao?.text = herb.locaisAcao
         funcoes?.text = herb.funcoes
@@ -43,9 +39,11 @@ class DisplayHerb: UIViewController {
     }
     
     func setSizeToFit() {
-        let list = [nome, nomeFarmacologico, nomeCientifico, parteUtilizada, propriedades, locaisAcao, funcoes, doses]
+        let list = [nome, nomeCientifico, propriedades, locaisAcao, doses]
         for list in list {
-            list?.sizeToFit()
+//            list?.sizeToFit()
+            list?.lineBreakMode = .byWordWrapping
+            list?.numberOfLines = 2
         }
     }
 }

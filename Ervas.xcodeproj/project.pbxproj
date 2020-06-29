@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55045B8D24A9533400715FB2 /* DisplayHerb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerb.swift */; };
 		55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */; };
+		55045B9124A9865100715FB2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B9024A9865100715FB2 /* CustomCell.swift */; };
 		558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085B24A94C080052C1EB /* AppDelegate.swift */; };
 		558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085D24A94C080052C1EB /* SceneDelegate.swift */; };
 		558D086024A94C080052C1EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085F24A94C080052C1EB /* MainViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		55045B8C24A9533400715FB2 /* DisplayHerb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerb.swift; sourceTree = "<group>"; };
 		55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		55045B9024A9865100715FB2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		558D085824A94C080052C1EB /* Ervas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ervas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558D085B24A94C080052C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558D085D24A94C080052C1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				558D085B24A94C080052C1EB /* AppDelegate.swift */,
 				558D085D24A94C080052C1EB /* SceneDelegate.swift */,
 				558D085F24A94C080052C1EB /* MainViewController.swift */,
+				55045B9024A9865100715FB2 /* CustomCell.swift */,
 				558D086124A94C080052C1EB /* Main.storyboard */,
 				55045B8C24A9533400715FB2 /* DisplayHerb.swift */,
 				55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */,
@@ -278,6 +281,7 @@
 				558D086024A94C080052C1EB /* MainViewController.swift in Sources */,
 				55045B8D24A9533400715FB2 /* DisplayHerb.swift in Sources */,
 				558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */,
+				55045B9124A9865100715FB2 /* CustomCell.swift in Sources */,
 				558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */,
 				55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,
