@@ -14,12 +14,16 @@ class MoreInfoViewController: UIViewController {
     @IBOutlet weak var toxidez: UITextView?
     @IBOutlet weak var preocaucoesHC: NSLayoutConstraint?
     @IBOutlet weak var toxidezHC: NSLayoutConstraint?
+    @IBOutlet weak var nomeFarmacologico: UILabel?
+    @IBOutlet weak var parteUtilizada: UILabel?
 
     var herb: Erva!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nomeFarmacologico?.text = herb.nomeFarmacologico
+        parteUtilizada?.text = herb.parteUtilizada
         precaucoes?.text = herb.precaucoes
         preocaucoesHC?.constant = precaucoes!.contentSize.height
         

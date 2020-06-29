@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55045B8D24A9533400715FB2 /* DisplayHerb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerb.swift */; };
+		55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */; };
 		55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */; };
+		55045B9124A9865100715FB2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B9024A9865100715FB2 /* CustomCell.swift */; };
+		557B20B424AA1F92006F0A30 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B20B324AA1F92006F0A30 /* Colors.swift */; };
+		557B20B624AA56D5006F0A30 /* logo + nome.png in Resources */ = {isa = PBXBuildFile; fileRef = 557B20B524AA56D5006F0A30 /* logo + nome.png */; };
 		558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085B24A94C080052C1EB /* AppDelegate.swift */; };
 		558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085D24A94C080052C1EB /* SceneDelegate.swift */; };
 		558D086024A94C080052C1EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085F24A94C080052C1EB /* MainViewController.swift */; };
@@ -40,8 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55045B8C24A9533400715FB2 /* DisplayHerb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerb.swift; sourceTree = "<group>"; };
+		55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerbViewController.swift; sourceTree = "<group>"; };
 		55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		55045B9024A9865100715FB2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		557B20B324AA1F92006F0A30 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		557B20B524AA56D5006F0A30 /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo + nome.png"; path = "../../images/logo + nome.png"; sourceTree = "<group>"; };
 		558D085824A94C080052C1EB /* Ervas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ervas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558D085B24A94C080052C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558D085D24A94C080052C1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +92,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		557B20AC24AA11E9006F0A30 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				558D085F24A94C080052C1EB /* MainViewController.swift */,
+				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
+				55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		557B20AD24AA11F4006F0A30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				558D088E24A94D950052C1EB /* Erva.swift */,
+				558D089024A94EDF0052C1EB /* ErvasList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		557B20AE24AA11FE006F0A30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				557B20B324AA1F92006F0A30 /* Colors.swift */,
+				55045B9024A9865100715FB2 /* CustomCell.swift */,
+				558D086124A94C080052C1EB /* Main.storyboard */,
+				558D086924A94C090052C1EB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		558D084F24A94C080052C1EB = {
 			isa = PBXGroup;
 			children = (
@@ -111,14 +147,11 @@
 			children = (
 				558D085B24A94C080052C1EB /* AppDelegate.swift */,
 				558D085D24A94C080052C1EB /* SceneDelegate.swift */,
-				558D085F24A94C080052C1EB /* MainViewController.swift */,
-				558D086124A94C080052C1EB /* Main.storyboard */,
-				55045B8C24A9533400715FB2 /* DisplayHerb.swift */,
-				55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */,
-				558D088E24A94D950052C1EB /* Erva.swift */,
-				558D089024A94EDF0052C1EB /* ErvasList.swift */,
+				557B20B524AA56D5006F0A30 /* logo + nome.png */,
+				557B20AC24AA11E9006F0A30 /* ViewControllers */,
+				557B20AE24AA11FE006F0A30 /* View */,
+				557B20AD24AA11F4006F0A30 /* Model */,
 				558D086724A94C090052C1EB /* Assets.xcassets */,
-				558D086924A94C090052C1EB /* LaunchScreen.storyboard */,
 				558D086C24A94C090052C1EB /* Info.plist */,
 				558D086424A94C080052C1EB /* Ervas.xcdatamodeld */,
 			);
@@ -248,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				558D086B24A94C090052C1EB /* LaunchScreen.storyboard in Resources */,
+				557B20B624AA56D5006F0A30 /* logo + nome.png in Resources */,
 				558D086824A94C090052C1EB /* Assets.xcassets in Resources */,
 				558D086324A94C080052C1EB /* Main.storyboard in Resources */,
 			);
@@ -275,9 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				558D088F24A94D950052C1EB /* Erva.swift in Sources */,
+				557B20B424AA1F92006F0A30 /* Colors.swift in Sources */,
 				558D086024A94C080052C1EB /* MainViewController.swift in Sources */,
-				55045B8D24A9533400715FB2 /* DisplayHerb.swift in Sources */,
+				55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */,
 				558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */,
+				55045B9124A9865100715FB2 /* CustomCell.swift in Sources */,
 				558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */,
 				55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,

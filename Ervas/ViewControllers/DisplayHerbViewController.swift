@@ -1,5 +1,5 @@
 //
-//  DisplayHerb.swift
+//  DisplayHerbViewController.swift
 //  Ervas
 //
 //  Created by Fernando Augusto de Marins on 28/06/20.
@@ -8,11 +8,9 @@
 
 import UIKit
 
-class DisplayHerb: UIViewController {
+class DisplayHerbViewController: UIViewController {
     @IBOutlet weak var nome: UILabel?
-    @IBOutlet weak var nomeFarmacologico: UILabel?
     @IBOutlet weak var nomeCientifico: UILabel?
-    @IBOutlet weak var parteUtilizada: UILabel?
     @IBOutlet weak var propriedades: UILabel?
     @IBOutlet weak var locaisAcao: UILabel?
     @IBOutlet weak var funcoes: UITextView?
@@ -23,14 +21,19 @@ class DisplayHerb: UIViewController {
     
     override func viewDidLoad() {
         nome?.text = herb.nome
-        nomeFarmacologico?.text = herb.nomeFarmacologico
         nomeCientifico?.text = herb.nomeCientifico
-        parteUtilizada?.text = herb.parteUtilizada
         propriedades?.text = herb.propriedades
         locaisAcao?.text = herb.locaisAcao
         funcoes?.text = herb.funcoes
         funcoesHC?.constant = funcoes!.contentSize.height
         doses?.text = herb.doses
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem (
+            title: "ERVA",
+            style: .plain,
+            target: nil,
+            action: nil
+        )
         
         setSizeToFit()
     }
@@ -43,9 +46,10 @@ class DisplayHerb: UIViewController {
     }
     
     func setSizeToFit() {
-        let list = [nome, nomeFarmacologico, nomeCientifico, parteUtilizada, propriedades, locaisAcao, funcoes, doses]
+        let list = [nome, nomeCientifico, propriedades, locaisAcao, doses]
         for list in list {
-            list?.sizeToFit()
+            list?.lineBreakMode = .byWordWrapping
+            list?.numberOfLines = 2
         }
     }
 }
