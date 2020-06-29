@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="1208.6956521739132" y="-168.08035714285714"/>
         </scene>
-        <!--Display Herb-->
+        <!--Display Herb View Controller-->
         <scene sceneID="a7C-1d-JpO">
             <objects>
-                <viewController storyboardIdentifier="detailVC" id="9xh-Yq-zIB" customClass="DisplayHerb" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailVC" id="9xh-Yq-zIB" customClass="DisplayHerbViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4qh-s9-hrx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -400,7 +400,9 @@
                         <outlet property="nomeFarmacologico" destination="cjY-p0-zVH" id="uSm-wA-sEC"/>
                         <outlet property="parteUtilizada" destination="6tH-C0-rpZ" id="wLT-CE-73d"/>
                         <outlet property="precaucoes" destination="8OM-Wm-UCH" id="xnT-qY-1bh"/>
+                        <outlet property="preocaucoesHC" destination="ExF-fi-6rJ" id="uiC-10-N3a"/>
                         <outlet property="toxidez" destination="k3R-M6-lKQ" id="s2u-EQ-WKc"/>
+                        <outlet property="toxidezHC" destination="xdO-zw-7Ho" id="Adj-VD-l2m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UhW-3N-JHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

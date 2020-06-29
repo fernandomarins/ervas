@@ -1,5 +1,5 @@
 //
-//  DisplayHerb.swift
+//  DisplayHerbViewController.swift
 //  Ervas
 //
 //  Created by Fernando Augusto de Marins on 28/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DisplayHerb: UIViewController {
+class DisplayHerbViewController: UIViewController {
     @IBOutlet weak var nome: UILabel?
     @IBOutlet weak var nomeCientifico: UILabel?
     @IBOutlet weak var propriedades: UILabel?
