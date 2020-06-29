@@ -28,6 +28,13 @@ class DisplayHerbViewController: UIViewController {
         funcoesHC?.constant = funcoes!.contentSize.height
         doses?.text = herb.doses
         
+        navigationItem.backBarButtonItem = UIBarButtonItem (
+            title: "ERVA",
+            style: .plain,
+            target: nil,
+            action: nil
+        )
+        
         setSizeToFit()
     }
     
@@ -41,7 +48,6 @@ class DisplayHerbViewController: UIViewController {
     func setSizeToFit() {
         let list = [nome, nomeCientifico, propriedades, locaisAcao, doses]
         for list in list {
-//            list?.sizeToFit()
             list?.lineBreakMode = .byWordWrapping
             list?.numberOfLines = 2
         }
