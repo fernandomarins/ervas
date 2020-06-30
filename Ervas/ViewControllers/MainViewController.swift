@@ -25,9 +25,10 @@ class MainViewController: UITableViewController {
         // 2
         s.obscuresBackgroundDuringPresentation = false
         // 3
-        s.searchBar.placeholder = "Buscar ervas"
+        s.searchBar.placeholder = "Buscar..."
         
         s.searchBar.sizeToFit()
+
 //        s.searchBar.scopeButtonTitles = ["SABOR OU ÓRGÃO"]
     
         // 4

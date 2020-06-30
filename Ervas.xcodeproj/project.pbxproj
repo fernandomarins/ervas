@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A5BB782CEFFAF6A75744A4 /* Pods_Ervas_ErvasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */; };
 		55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */; };
 		55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */; };
 		55045B9124A9865100715FB2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B9024A9865100715FB2 /* CustomCell.swift */; };
@@ -23,6 +24,9 @@
 		558D088124A94C0A0052C1EB /* ErvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D088024A94C0A0052C1EB /* ErvasUITests.swift */; };
 		558D088F24A94D950052C1EB /* Erva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D088E24A94D950052C1EB /* Erva.swift */; };
 		558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D089024A94EDF0052C1EB /* ErvasList.swift */; };
+		55D56B9F24AB589C0025FCA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55D56B9E24AB589C0025FCA3 /* GoogleService-Info.plist */; };
+		C21501364413CF2C3E5FAF44 /* Pods_ErvasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B55BEFE625F5DDBE304B49 /* Pods_ErvasTests.framework */; };
+		CFBC0A6F10E4FD640C21AF48 /* Pods_Ervas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8659CA4978E83D78AF125E /* Pods_Ervas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EDBF0AC8CBDBC23BF77B5DA /* Pods-Ervas-ErvasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas-ErvasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3747FD4ABA0FDFCB982510EA /* Pods-Ervas-ErvasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas-ErvasUITests.release.xcconfig"; path = "Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4514F5F72F406E137C89A216 /* Pods-ErvasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.debug.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerbViewController.swift; sourceTree = "<group>"; };
 		55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		55045B9024A9865100715FB2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -65,6 +72,13 @@
 		558D088224A94C0A0052C1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		558D088E24A94D950052C1EB /* Erva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erva.swift; sourceTree = "<group>"; };
 		558D089024A94EDF0052C1EB /* ErvasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErvasList.swift; sourceTree = "<group>"; };
+		55D56B9E24AB589C0025FCA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ervas_ErvasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.release.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.release.xcconfig"; sourceTree = "<group>"; };
+		6CABA1DAC56B57F90BA1B98B /* Pods-Ervas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas.release.xcconfig"; path = "Target Support Files/Pods-Ervas/Pods-Ervas.release.xcconfig"; sourceTree = "<group>"; };
+		8C2B27E4D1C888184CA0C20A /* Pods-Ervas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas.debug.xcconfig"; path = "Target Support Files/Pods-Ervas/Pods-Ervas.debug.xcconfig"; sourceTree = "<group>"; };
+		AC8659CA4978E83D78AF125E /* Pods_Ervas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ervas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B55BEFE625F5DDBE304B49 /* Pods_ErvasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErvasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBC0A6F10E4FD640C21AF48 /* Pods_Ervas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21501364413CF2C3E5FAF44 /* Pods_ErvasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A5BB782CEFFAF6A75744A4 /* Pods_Ervas_ErvasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +146,8 @@
 				558D087424A94C090052C1EB /* ErvasTests */,
 				558D087F24A94C0A0052C1EB /* ErvasUITests */,
 				558D085924A94C080052C1EB /* Products */,
+				A50EC987A9BF47C95484CAC1 /* Pods */,
+				E220106B57FB8338EF4C45E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +172,7 @@
 				557B20AD24AA11F4006F0A30 /* Model */,
 				558D086724A94C090052C1EB /* Assets.xcassets */,
 				558D086C24A94C090052C1EB /* Info.plist */,
+				55D56B9E24AB589C0025FCA3 /* GoogleService-Info.plist */,
 				558D086424A94C080052C1EB /* Ervas.xcdatamodeld */,
 			);
 			path = Ervas;
@@ -176,6 +196,30 @@
 			path = ErvasUITests;
 			sourceTree = "<group>";
 		};
+		A50EC987A9BF47C95484CAC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C2B27E4D1C888184CA0C20A /* Pods-Ervas.debug.xcconfig */,
+				6CABA1DAC56B57F90BA1B98B /* Pods-Ervas.release.xcconfig */,
+				1EDBF0AC8CBDBC23BF77B5DA /* Pods-Ervas-ErvasUITests.debug.xcconfig */,
+				3747FD4ABA0FDFCB982510EA /* Pods-Ervas-ErvasUITests.release.xcconfig */,
+				4514F5F72F406E137C89A216 /* Pods-ErvasTests.debug.xcconfig */,
+				5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E220106B57FB8338EF4C45E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC8659CA4978E83D78AF125E /* Pods_Ervas.framework */,
+				5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */,
+				C1B55BEFE625F5DDBE304B49 /* Pods_ErvasTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 558D088524A94C0A0052C1EB /* Build configuration list for PBXNativeTarget "Ervas" */;
 			buildPhases = (
+				A8B8C3EAA0F6B6D52C6FD42D /* [CP] Check Pods Manifest.lock */,
 				558D085424A94C080052C1EB /* Sources */,
 				558D085524A94C080052C1EB /* Frameworks */,
 				558D085624A94C080052C1EB /* Resources */,
+				A1AF83BB7F623437A9614E0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 558D088824A94C0A0052C1EB /* Build configuration list for PBXNativeTarget "ErvasTests" */;
 			buildPhases = (
+				D34FB917E43B6F25D4D272C9 /* [CP] Check Pods Manifest.lock */,
 				558D086D24A94C090052C1EB /* Sources */,
 				558D086E24A94C090052C1EB /* Frameworks */,
 				558D086F24A94C090052C1EB /* Resources */,
@@ -218,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 558D088B24A94C0A0052C1EB /* Build configuration list for PBXNativeTarget "ErvasUITests" */;
 			buildPhases = (
+				1CBBA76DF7710F084BC0472C /* [CP] Check Pods Manifest.lock */,
 				558D087824A94C0A0052C1EB /* Sources */,
 				558D087924A94C0A0052C1EB /* Frameworks */,
 				558D087A24A94C0A0052C1EB /* Resources */,
+				91F5C63C000CA0A2106FC6F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +331,7 @@
 			files = (
 				558D086B24A94C090052C1EB /* LaunchScreen.storyboard in Resources */,
 				557B20B624AA56D5006F0A30 /* logo + nome.png in Resources */,
+				55D56B9F24AB589C0025FCA3 /* GoogleService-Info.plist in Resources */,
 				558D086824A94C090052C1EB /* Assets.xcassets in Resources */,
 				558D086324A94C080052C1EB /* Main.storyboard in Resources */,
 			);
@@ -302,6 +352,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CBBA76DF7710F084BC0472C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ervas-ErvasUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F5C63C000CA0A2106FC6F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1AF83BB7F623437A9614E0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ervas/Pods-Ervas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ervas/Pods-Ervas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ervas/Pods-Ervas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B8C3EAA0F6B6D52C6FD42D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ervas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D34FB917E43B6F25D4D272C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ErvasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		558D085424A94C080052C1EB /* Sources */ = {
@@ -488,9 +641,11 @@
 		};
 		558D088624A94C0A0052C1EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2B27E4D1C888184CA0C20A /* Pods-Ervas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8ULV38G2Z;
 				INFOPLIST_FILE = Ervas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,9 +660,11 @@
 		};
 		558D088724A94C0A0052C1EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CABA1DAC56B57F90BA1B98B /* Pods-Ervas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8ULV38G2Z;
 				INFOPLIST_FILE = Ervas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +679,7 @@
 		};
 		558D088924A94C0A0052C1EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4514F5F72F406E137C89A216 /* Pods-ErvasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +701,7 @@
 		};
 		558D088A24A94C0A0052C1EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +723,7 @@
 		};
 		558D088C24A94C0A0052C1EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EDBF0AC8CBDBC23BF77B5DA /* Pods-Ervas-ErvasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +743,7 @@
 		};
 		558D088D24A94C0A0052C1EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3747FD4ABA0FDFCB982510EA /* Pods-Ervas-ErvasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
