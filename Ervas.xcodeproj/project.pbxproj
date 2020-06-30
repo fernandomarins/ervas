@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -73,6 +73,7 @@
 		558D088E24A94D950052C1EB /* Erva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erva.swift; sourceTree = "<group>"; };
 		558D089024A94EDF0052C1EB /* ErvasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErvasList.swift; sourceTree = "<group>"; };
 		55D56B9E24AB589C0025FCA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55E3DC1624AB7744007DDE76 /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ervas_ErvasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.release.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CABA1DAC56B57F90BA1B98B /* Pods-Ervas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas.release.xcconfig"; path = "Target Support Files/Pods-Ervas/Pods-Ervas.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 				55045B9024A9865100715FB2 /* CustomCell.swift */,
 				558D086124A94C080052C1EB /* Main.storyboard */,
 				558D086924A94C090052C1EB /* LaunchScreen.storyboard */,
+				55E3DC1624AB7744007DDE76 /* logo + nome.png */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,7 +208,6 @@
 				4514F5F72F406E137C89A216 /* Pods-ErvasTests.debug.xcconfig */,
 				5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
