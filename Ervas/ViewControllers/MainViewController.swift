@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UITableViewController {
     
     // Criando o UISearchController
+    // https://www.iosapptemplates.com/blog/ios-programming/uisearchcontroller-swift
     let s = UISearchController(searchResultsController: nil)
     // Array com os valores filtrados
     var filteredHerbs: [Erva] = []
