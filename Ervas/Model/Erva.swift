@@ -9,30 +9,30 @@
 import Foundation
 
 struct Erva {
-    var categoria: Int
-    var id: Int
+    var categoria: String
+    var id: String
     var nome: String
     var nomeFarmacologico: String
     var nomeCientifico: String
-    var parteUtilizada: Array<String>
-    var propriedades: Array<String>
-    var locaisAcao: Array<String>
-    var funcoes: Array<String>
+    var parteUtilizada: [String: AnyObject]
+    var propriedades: [String: AnyObject]
+    var locaisAcao: [String: AnyObject]
+    var funcoes: [String: AnyObject]
     var precaucoes: String
     var doses: String
     var toxidez: String
     
     init(erva: NSDictionary) {
         if erva.object(forKey: "categoria") != nil {
-            categoria = erva.object(forKey: "categoria") as! Int
+            categoria = erva.object(forKey: "categoria") as! String
         } else {
-            categoria = 0
+            categoria = ""
         }
         
         if erva.object(forKey: "id") != nil {
-            id = erva.object(forKey: "id") as! Int
+            id = erva.object(forKey: "id") as! String
         } else {
-            id = 0
+            id = ""
         }
         
         if erva.object(forKey: "nome") != nil {
@@ -54,27 +54,27 @@ struct Erva {
         }
         
         if erva.object(forKey: "parteUtilizada") != nil {
-            parteUtilizada = erva.object(forKey: "parteUtilizada") as! Array<String>
+            parteUtilizada = erva.object(forKey: "parteUtilizada") as! [String: AnyObject]
         }  else {
-            parteUtilizada = []
+            parteUtilizada = [:]
         }
         
         if erva.object(forKey: "propriedades") != nil {
-            propriedades = erva.object(forKey: "propriedades") as! Array<String>
+            propriedades = erva.object(forKey: "propriedades") as! [String: AnyObject]
         }   else {
-            propriedades = []
+            propriedades = [:]
         }
         
         if erva.object(forKey: "locaisAcao") != nil {
-            locaisAcao = erva.object(forKey: "locaisAcao") as! Array<String>
+            locaisAcao = erva.object(forKey: "locaisAcao") as! [String: AnyObject]
         }   else {
-            locaisAcao = []
+            locaisAcao = [:]
         }
         
         if erva.object(forKey: "funcoes") != nil {
-            funcoes = erva.object(forKey: "funcoes") as! Array<String>
+            funcoes = erva.object(forKey: "funcoes") as! [String: AnyObject]
         }   else {
-            funcoes = []
+            funcoes = [:]
         }
         
         if erva.object(forKey: "precaucoes") != nil {
@@ -95,11 +95,6 @@ struct Erva {
             toxidez = ""
         }
         
-    }
-    
-    func convertToDictionary(chave: String, valor: Array<String>) -> [String : Any] {
-        let dic: [String: Array<String>] = [chave: valor]
-        return dic
     }
 }
 

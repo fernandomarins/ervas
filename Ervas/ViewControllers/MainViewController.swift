@@ -27,18 +27,18 @@ class MainViewController: UITableViewController {
         
         ref = Database.database().reference()
         
-        // listar por categoria
-        
-         
-        let orderedByCategory = ref?.child("database").queryOrdered(byChild: "ervas/categoria")
-        print(orderedByCategory)
-        
-//        databaseHandle = ref?.child("database").observe(.childAdded, with: { (snapshot) in
+        databaseHandle = ref?.child("ervas").observe(.childAdded, with: { (snapshot) in
+            
+            let allErvas = snapshot.value as? NSDictionary
+            var erva = Erva(erva: allErvas!)
+            
+            print("Erviiinha \(erva)")
+            print("All eeeervas \(allErvas)")
 //            // take data from the snapshot and add it to ErvasList.herbsList
 //            // snapshot.children.allObjects[0] access the first value
 //            let Erva = snapshot.value
 //            ErvasList.herbsList.append(Erva.init())
-//        })
+        })
         
 //        addToDataBase()
         
