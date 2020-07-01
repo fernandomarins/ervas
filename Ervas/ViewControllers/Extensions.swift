@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 // https://www.hackingwithswift.com/example-code/strings/how-to-capitalize-the-first-letter-of-a-string
 extension String {
     func capitalizingFirstLetter() -> String {
@@ -17,3 +18,20 @@ extension String {
         self = self.capitalizingFirstLetter()
     }
 }
+
+extension UIViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension UIViewController {
+    // Getting values from the dictionary and turning into a string to display in the cell
+    func getValuesFromDictionary(dicionario: NSDictionary) -> String {
+        let dados = dicionario.allValues as! [String]
+        let frase = dados.joined(separator:", ")
+        return frase
+    }
+}
+

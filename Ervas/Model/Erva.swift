@@ -97,28 +97,3 @@ struct Erva {
         
     }
 }
-
-// https://www.avanderlee.com/swift/json-parsing-decoding/
-//
-//struct Erva: Codable {
-//    enum Propriedades: String, Codable {
-//        case Amargo, Doce, Salgado, Neutro, Amornante, Refrescante
-//    }
-//
-//    enum LocaisAcao: String, Codable {
-//        case Pulmao, Bexiga, Rim, Baco, IntestinoGrosso
-//    }
-//
-//        let nome: String
-//        let categoria: Int
-//        let id: Int
-//        let nomeFarmacologico: String
-//        let nomeCientifico: String
-//        let parteUtilizada: String
-//        let propriedades: Propriedades
-//        let locaisAcao: LocaisAcao
-//        let funcoes: String
-//        let precaucoes: String?
-//        let doses: String
-//        let toxidez: String?
-//}

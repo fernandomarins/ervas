@@ -34,7 +34,6 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
         
         ref = Database.database().reference()
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,13 +49,16 @@ class AddViewController: UIViewController {
     
     @IBAction func sentToDataBase(_ sender: Any) {
         
+        // Pegando o texto dos textfields
         let partes = separateStrings(partesTextField.text!)
         let propriedades = separateStrings(propriedadesTextField.text!)
         let locais = separateStrings(locaisAcaoTextField.text!)
-        let funcoes = separateStrings(locaisAcaoTextField.text!)
+        let funcoes = separateStrings(funcoesTextField.text!)
         
+        // Criando o payload para enviar para o database
         let payLoad = ["nome": nomeTextField.text, "nomeFarmacologico": nomeFTextField.text, "nomeCientifico": nomeCTextField.text, "parteUtilizada": partes, "propriedades": propriedades, "locaisAcao": locais, "funcoes": funcoes, "precaucoes": contraIndicacaoTextField.text, "doses": dosesTextField.text, "toxidez": toxidadeTextField.text, "categoria": categoriaTextField.text, "id": idTextField.text] as [String : Any]
         
+        // Enviando para o database, colocando o child como o id
         ref?.child(pathToDataBase).child(idTextField.text!).setValue(payLoad)
         
     }
@@ -89,6 +91,7 @@ class AddViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(_ notification :Notification) {
+        // Somente levando a view para cima se estiver usando os dois textfields de baixo
         if dosesTextField.isFirstResponder || toxidadeTextField.isFirstResponder {
             view.frame.origin.y = -getKeyboardHight(notification: notification)
         }
@@ -105,12 +108,3 @@ class AddViewController: UIViewController {
     }
 
 }
-
-extension UIViewController: UITextFieldDelegate {
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-}
-
-// https://www.hackingwithswift.com/example-code/strings/how-to-capitalize-the-first-letter-of-a-string
