@@ -22,9 +22,9 @@ class DisplayHerbViewController: UIViewController {
     override func viewDidLoad() {
         nome?.text = herb.nome
         nomeCientifico?.text = herb.nomeCientifico
-        propriedades?.text = herb.propriedades
-        locaisAcao?.text = herb.locaisAcao
-        funcoes?.text = herb.funcoes
+        propriedades?.text = ""//herb.propriedades
+        locaisAcao?.text = ""//herb.locaisAcao
+        funcoes?.text = ""//herb.funcoes
         funcoesHC?.constant = funcoes!.contentSize.height
         doses?.text = herb.doses
         

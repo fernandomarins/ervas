@@ -23,7 +23,7 @@ class MoreInfoViewController: UIViewController {
         super.viewDidLoad()
         
         nomeFarmacologico?.text = herb.nomeFarmacologico
-        parteUtilizada?.text = herb.parteUtilizada
+        parteUtilizada?.text = ""//herb.parteUtilizada
         precaucoes?.text = herb.precaucoes
         preocaucoesHC?.constant = precaucoes!.contentSize.height
         

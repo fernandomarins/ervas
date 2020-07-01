@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class AddViewController: UIViewController {
 
@@ -21,9 +22,18 @@ class AddViewController: UIViewController {
     @IBOutlet weak var dosesTextField: UITextField!
     @IBOutlet weak var toxidadeTextField: UITextField!
     @IBOutlet weak var sentToDataBaseButton: UIButton!
-        
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var categoriaTextField: UITextField!
+    @IBOutlet weak var idTextField: UITextField!
+    
+    
+    var ref: DatabaseReference?
+    let pathToDataBase = "ervas"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
         // Do any additional setup after loading the view.
     }
     
@@ -38,6 +48,37 @@ class AddViewController: UIViewController {
         unSubscribeTokeyboardNotification()
     }
     
+    @IBAction func sentToDataBase(_ sender: Any) {
+        
+        let partes = separateStrings(partesTextField.text!)
+        let propriedades = separateStrings(propriedadesTextField.text!)
+        let locais = separateStrings(locaisAcaoTextField.text!)
+        let funcoes = separateStrings(locaisAcaoTextField.text!)
+        
+        let payLoad = ["nome": nomeTextField.text, "nomeFarmacologico": nomeFTextField.text, "nomeCientifico": nomeCTextField.text, "parteUtilizada": partes, "propriedades": propriedades, "locaisAcao": locais, "funcoes": funcoes, "precaucoes": contraIndicacaoTextField.text, "doses": dosesTextField.text, "toxidez": toxidadeTextField.text, "categoria": categoriaTextField.text, "id": idTextField.text] as [String : Any]
+        
+        ref?.child(pathToDataBase).child(idTextField.text!).setValue(payLoad)
+        
+    }
+    
+    // Method to return an dictionary with sepated values
+    private func separateStrings(_ text: String) -> [String: String] {
+        // Separando o texto num array
+        let separated = text.components(separatedBy: ";")
+        var separatedCapitalized = [String]()
+        for text in separated {
+            // Colocando a primeira letra maiúsculo
+            separatedCapitalized.append(text.capitalizingFirstLetter())
+        }
+        // Dicionário que vai armazenar a informação
+        var dic: [String: String] = [:]
+        // Vou iterar para adicionar os valores e as chaves em número crescente
+        for number in stride(from: 0, to: separated.count, by: 1) {
+            dic["parte\(number)"] = separatedCapitalized[number]
+        }
+        return dic
+    }
+    
     func subscribeTokeyboardNotification(){
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
@@ -48,7 +89,7 @@ class AddViewController: UIViewController {
     }
     
     @objc func keyboardWillShow(_ notification :Notification) {
-        if funcoesTextField.isFirstResponder || contraIndicacaoTextField.isFirstResponder || dosesTextField.isFirstResponder || toxidadeTextField.isFirstResponder {
+        if dosesTextField.isFirstResponder || toxidadeTextField.isFirstResponder {
             view.frame.origin.y = -getKeyboardHight(notification: notification)
         }
     }
@@ -71,3 +112,5 @@ extension UIViewController: UITextFieldDelegate {
         return true
     }
 }
+
+// https://www.hackingwithswift.com/example-code/strings/how-to-capitalize-the-first-letter-of-a-string

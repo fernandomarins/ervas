@@ -8,6 +8,7 @@ target 'Ervas' do
   # Pods for Ervas
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
 
   target 'ErvasTests' do
     inherit! :search_paths
