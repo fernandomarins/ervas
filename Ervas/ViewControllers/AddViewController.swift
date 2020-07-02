@@ -56,7 +56,7 @@ class AddViewController: UIViewController {
         let funcoes = separateStrings(funcoesTextField.text!)
         
         // Criando o payload para enviar para o database
-        let payLoad = ["nome": nomeTextField.text, "nomeFarmacologico": nomeFTextField.text, "nomeCientifico": nomeCTextField.text, "parteUtilizada": partes, "propriedades": propriedades, "locaisAcao": locais, "funcoes": funcoes, "precaucoes": contraIndicacaoTextField.text, "doses": dosesTextField.text, "toxidez": toxidadeTextField.text, "categoria": categoriaTextField.text, "id": idTextField.text] as [String : Any]
+        let payLoad = ["nome": nomeTextField.text ?? "", "nomeFarmacologico": nomeFTextField.text ?? "", "nomeCientifico": nomeCTextField.text ?? "", "parteUtilizada": partes, "propriedades": propriedades, "locaisAcao": locais, "funcoes": funcoes, "precaucoes": contraIndicacaoTextField.text ?? "", "doses": dosesTextField.text ?? "", "toxidez": toxidadeTextField.text ?? "", "categoria": categoriaTextField.text ?? "", "id": idTextField.text ?? ""] as [String : Any]
         
         // Enviando para o database, colocando o child como o id
         ref?.child(pathToDataBase).child(idTextField.text!).setValue(payLoad)

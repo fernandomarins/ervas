@@ -36,6 +36,5 @@ extension UIViewController {
             return dados.joined(separator:", ")
         }
     }
-
 }
 
