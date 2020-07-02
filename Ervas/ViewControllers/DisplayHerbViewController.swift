@@ -28,6 +28,7 @@ class DisplayHerbViewController: UIViewController {
         funcoesHC?.constant = funcoes!.contentSize.height
         doses?.text = herb.doses
         
+        // Trocando nome do back buttom da view que será pushed
         navigationItem.backBarButtonItem = UIBarButtonItem (
             title: "ERVA",
             style: .plain,

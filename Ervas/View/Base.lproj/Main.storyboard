@@ -27,7 +27,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="2tA-ls-iA1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="CT2-pg-gmc"/>
                                                 </connections>
@@ -38,7 +38,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="cX0-Bi-TFA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="fAI-EO-Eeo"/>
                                                 </connections>
@@ -49,7 +49,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="U1f-oH-W31"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="oZh-z0-6rI"/>
                                                 </connections>
@@ -60,7 +60,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="Mla-46-TxZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="X9c-jS-W1W"/>
                                                 </connections>
@@ -71,7 +71,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="PRO-hZ-jlx"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="IaA-vT-xaN"/>
                                                 </connections>
@@ -82,7 +82,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="2gA-EI-3HN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="rvR-BY-sdb"/>
                                                 </connections>
@@ -93,7 +93,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="f3F-je-tJT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="EC3-g4-HbU"/>
                                                 </connections>
@@ -104,7 +104,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="8zK-o6-P7i"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="h9u-TJ-NDI"/>
                                                 </connections>
@@ -115,7 +115,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="v4K-4G-XYl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="EPN-kM-e5c"/>
                                                 </connections>
@@ -126,7 +126,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="4H7-Py-rGR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="P2b-sC-Ai7"/>
                                                 </connections>
@@ -138,7 +138,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="yq1-Cm-8VK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="Lcg-Pe-m3j"/>
                                                 </connections>
@@ -150,7 +150,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="dpO-KW-JQ4"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="wQS-za-IUU" id="pQ9-Dz-vMR"/>
                                                 </connections>
@@ -260,35 +260,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="128" id="hMo-oj-JFt" customClass="CustomCell" customModule="Ervas" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="128"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="160" id="hMo-oj-JFt" customClass="CustomCell" customModule="Ervas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hMo-oj-JFt" id="2ij-tK-BVw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbe-Ci-6Rd">
-                                            <rect key="frame" x="20" y="11" width="374" height="29"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbe-Ci-6Rd">
+                                            <rect key="frame" x="20" y="11" width="374" height="56"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="29" id="BeI-fp-szd"/>
+                                                <constraint firstAttribute="height" constant="56" id="otl-gz-UOd"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMP-JD-vQC">
-                                            <rect key="frame" x="20" y="96" width="374" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMP-JD-vQC">
+                                            <rect key="frame" x="20" y="118" width="374" height="35"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="Ytl-h8-NG5"/>
+                                                <constraint firstAttribute="height" constant="35" id="c07-xO-WI4"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpk-8R-71s">
-                                            <rect key="frame" x="20" y="54" width="374" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpk-8R-71s">
+                                            <rect key="frame" x="20" y="75" width="374" height="35"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="rJK-tL-kBZ"/>
+                                                <constraint firstAttribute="height" constant="35" id="txR-xU-QzL"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <nil key="textColor"/>
@@ -296,24 +296,22 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="bottom" secondItem="2ij-tK-BVw" secondAttribute="bottomMargin" id="EDQ-aP-30T"/>
-                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="trailing" secondItem="2ij-tK-BVw" secondAttribute="trailingMargin" id="FzD-93-msl"/>
-                                        <constraint firstItem="vpk-8R-71s" firstAttribute="top" secondItem="dbe-Ci-6Rd" secondAttribute="bottom" constant="14" id="Im5-2S-dAy"/>
-                                        <constraint firstItem="vpk-8R-71s" firstAttribute="trailing" secondItem="2ij-tK-BVw" secondAttribute="trailingMargin" id="Nv4-uA-DVV"/>
-                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="leading" secondItem="2ij-tK-BVw" secondAttribute="leadingMargin" id="Su0-OO-ZLd"/>
-                                        <constraint firstItem="vpk-8R-71s" firstAttribute="leading" secondItem="2ij-tK-BVw" secondAttribute="leadingMargin" id="TJH-1J-BqO"/>
-                                        <constraint firstItem="dbe-Ci-6Rd" firstAttribute="trailing" secondItem="2ij-tK-BVw" secondAttribute="trailingMargin" id="fLE-eI-CEd"/>
-                                        <constraint firstItem="vpk-8R-71s" firstAttribute="top" secondItem="dbe-Ci-6Rd" secondAttribute="bottom" constant="14" id="rG2-8z-F97"/>
-                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="top" secondItem="vpk-8R-71s" secondAttribute="bottom" constant="21" id="rI8-L3-9fH"/>
-                                        <constraint firstItem="dbe-Ci-6Rd" firstAttribute="leading" secondItem="2ij-tK-BVw" secondAttribute="leadingMargin" id="rgr-5Q-7we"/>
-                                        <constraint firstItem="dbe-Ci-6Rd" firstAttribute="top" secondItem="2ij-tK-BVw" secondAttribute="topMargin" id="vGt-JQ-l0q"/>
-                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="top" secondItem="vpk-8R-71s" secondAttribute="bottom" constant="21" id="ztE-J0-slc"/>
+                                        <constraint firstItem="dbe-Ci-6Rd" firstAttribute="leading" secondItem="2ij-tK-BVw" secondAttribute="leadingMargin" id="1Lt-QB-ntD"/>
+                                        <constraint firstAttribute="bottom" secondItem="vMP-JD-vQC" secondAttribute="bottom" constant="7" id="6D9-Qk-bnV"/>
+                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="leading" secondItem="2ij-tK-BVw" secondAttribute="leading" constant="20" id="May-0e-gjx"/>
+                                        <constraint firstItem="vMP-JD-vQC" firstAttribute="top" secondItem="vpk-8R-71s" secondAttribute="bottom" constant="8" id="OPf-oD-D4T"/>
+                                        <constraint firstItem="dbe-Ci-6Rd" firstAttribute="top" secondItem="2ij-tK-BVw" secondAttribute="topMargin" id="PPO-NQ-mIc"/>
+                                        <constraint firstItem="vpk-8R-71s" firstAttribute="leading" secondItem="2ij-tK-BVw" secondAttribute="leadingMargin" id="WTE-34-Fe4"/>
+                                        <constraint firstAttribute="trailing" secondItem="vMP-JD-vQC" secondAttribute="trailing" constant="20" id="cid-Vy-VJY"/>
+                                        <constraint firstItem="vpk-8R-71s" firstAttribute="top" secondItem="dbe-Ci-6Rd" secondAttribute="bottom" constant="8" id="dtI-BN-q1Q"/>
+                                        <constraint firstItem="dbe-Ci-6Rd" firstAttribute="trailing" secondItem="2ij-tK-BVw" secondAttribute="trailingMargin" id="hI6-z1-TR4"/>
+                                        <constraint firstItem="vpk-8R-71s" firstAttribute="trailing" secondItem="2ij-tK-BVw" secondAttribute="trailingMargin" id="wyg-l1-Jqy"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="categoria" destination="vMP-JD-vQC" id="DQn-qB-KQr"/>
                                     <outlet property="locaisAcao" destination="vpk-8R-71s" id="F22-TJ-Gjp"/>
                                     <outlet property="nome" destination="dbe-Ci-6Rd" id="w9W-w3-q8b"/>
-                                    <outlet property="propriedades" destination="vMP-JD-vQC" id="J0x-J7-czN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

@@ -53,6 +53,8 @@ class MainViewController: UITableViewController {
         
     }
     
+    // MARK: DELEGATE METHODS
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Se estiver filtrando, retornar o array com o filtro ativo
         if isFiltering() {
@@ -76,12 +78,10 @@ class MainViewController: UITableViewController {
         // Configure Cell
         cell.nome?.text = currentHerb.nome
         cell.locaisAcao?.text = getValuesFromDictionary(dicionario: currentHerb.locaisAcao as NSDictionary, funcoes: false)
-        cell.propriedades.text = getValuesFromDictionary(dicionario: currentHerb.propriedades as NSDictionary, funcoes: false)
+        cell.categoria.text = displayCategory(erva: currentHerb)
         
         return cell
     }
-    
-
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
@@ -102,6 +102,21 @@ class MainViewController: UITableViewController {
         navigationController?.pushViewController(detailVC, animated: true)
     }
     
+    // MARK: CUSTOM METHODS
+    
+    // Método para mostrar a categoria das ervas
+    func displayCategory(erva: Erva) -> String {
+        var categoria = ""
+        switch erva.categoria {
+        case "01":
+            categoria = "Substâncias Anticonvulsivas que Controlam o Vento do Fígado"
+        default:
+            categoria = ""
+        }
+        return categoria
+    }
+    
+    // Filtrar as ervas
     func filteredContentForSearchText(search: String) {
         filteredHerbs = ErvasList.herbsList.filter({ (Erva) -> Bool in
             return Erva.nome.lowercased().contains(search.lowercased())
