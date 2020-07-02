@@ -109,7 +109,69 @@ class MainViewController: UITableViewController {
         var categoria = ""
         switch erva.categoria {
         case "01":
+            categoria = "Ervas Sudoríficas Amornantes"
+        case "02":
+            categoria = "Ervas Sudoríficas Refrescantes"
+        case "03":
+            categoria = "Ervas que Transformam a Fleuma-Calor"
+        case "04":
+            categoria = "Ervas que Transformam a Fleuma-Frio"
+        case "05":
+            categoria = "Ervas que Aliviam a Tosse e a Dispnéia"
+        case "06":
+            categoria = "Ervas que Eliminam o Calor Intenso"
+        case "07":
+            categoria = "Ervas que Refrescam o Calor no Sangue"
+        case "08":
+            categoria = "Ervas que Eliminam o Calor e Drenam a Umidade"
+        case "09":
+            categoria = "Ervas que Eliminam Calor e Toxinas"
+        case "10":
+            categoria = "Ervas que Drenam o Calor de Verão"
+        case "11":
+            categoria = "Ervas que Drenam a Umidade"
+        case "12":
+            categoria = "Ervas Anti-Reumáticas que Eliminam o Vento e a Umidade"
+        case "13":
+            categoria = "Ervas que Aquecem o Interior e Expulsam o Frio"
+        case "14":
+            categoria = "Ervas Aromáticas que Transformam a Umidade"
+        case "15":
+            categoria = "Ervas que Aliviam a Estagnação de Alimentos"
+        case "16":
+            categoria = "Laxativos Suaves"
+        case "17":
+            categoria = "Laxativos que Purgam o Calor"
+        case "18":
+            categoria = "Laxativos Drásticos"
+        case "19":
+            categoria = "Ervas que Promovem a Circulação de Qi (Energia)"
+        case "20":
+            categoria = "Ervas Hemostáticas"
+        case "21":
+            categoria = "Ervas que Promovem a Circulação de Sangue"
+        case "22":
+            categoria = "Ervas Aromáticas que Abrem Orifícios"
+        case "23":
+            categoria = "Substâncias que Acalmam o Espírito"
+        case "24":
+            categoria = "Ervas que Nutrem o Coração e Acalmam o Espírito"
+        case "25":
             categoria = "Substâncias Anticonvulsivas que Controlam o Vento do Fígado"
+        case "26":
+            categoria = "Ervas Tônicas do Qi"
+        case "27":
+            categoria = "Ervas Tônicas do Sangue"
+        case "28":
+            categoria = "Ervas Tônicas do Yang"
+        case "29":
+            categoria = "Ervas Tônicas do Yin"
+        case "30":
+            categoria = "Substâncias Adstringentes que Previnem as Perdas"
+        case "31":
+            categoria = "Ervas que Expelem Parasitos"
+        case "32":
+            categoria = "Substâncias para Uso Externo"
         default:
             categoria = ""
         }
