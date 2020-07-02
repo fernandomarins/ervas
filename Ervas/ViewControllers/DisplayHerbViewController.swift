@@ -50,7 +50,7 @@ class DisplayHerbViewController: UIViewController {
         let list = [nome, nomeCientifico, propriedades, locaisAcao, doses]
         for list in list {
             list?.lineBreakMode = .byWordWrapping
-            list?.numberOfLines = 2
+            list?.numberOfLines = 0
         }
     }
 }
