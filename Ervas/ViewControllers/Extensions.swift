@@ -28,10 +28,14 @@ extension UIViewController: UITextFieldDelegate {
 
 extension UIViewController {
     // Getting values from the dictionary and turning into a string to display in the cell
-    func getValuesFromDictionary(dicionario: NSDictionary) -> String {
+    func getValuesFromDictionary(dicionario: NSDictionary, funcoes: Bool) -> String {
         let dados = dicionario.allValues as! [String]
-        let frase = dados.joined(separator:", ")
-        return frase
+        if funcoes {
+            return dados.joined(separator: " \n\n")
+        } else {
+            return dados.joined(separator:", ")
+        }
     }
+
 }
 

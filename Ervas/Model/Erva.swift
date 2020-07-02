@@ -14,10 +14,10 @@ struct Erva {
     var nome: String
     var nomeFarmacologico: String
     var nomeCientifico: String
-    var parteUtilizada: [String: AnyObject]
-    var propriedades: [String: AnyObject]
-    var locaisAcao: [String: AnyObject]
-    var funcoes: [String: AnyObject]
+    var parteUtilizada: [String: String]
+    var propriedades: [String: String]
+    var locaisAcao: [String: String]
+    var funcoes: [String: String]
     var precaucoes: String
     var doses: String
     var toxidez: String
@@ -54,25 +54,25 @@ struct Erva {
         }
         
         if erva.object(forKey: "parteUtilizada") != nil {
-            parteUtilizada = erva.object(forKey: "parteUtilizada") as! [String: AnyObject]
+            parteUtilizada = erva.object(forKey: "parteUtilizada") as! [String: String]
         }  else {
             parteUtilizada = [:]
         }
         
         if erva.object(forKey: "propriedades") != nil {
-            propriedades = erva.object(forKey: "propriedades") as! [String: AnyObject]
+            propriedades = erva.object(forKey: "propriedades") as! [String: String]
         }   else {
             propriedades = [:]
         }
         
         if erva.object(forKey: "locaisAcao") != nil {
-            locaisAcao = erva.object(forKey: "locaisAcao") as! [String: AnyObject]
+            locaisAcao = erva.object(forKey: "locaisAcao") as! [String: String]
         }   else {
             locaisAcao = [:]
         }
         
         if erva.object(forKey: "funcoes") != nil {
-            funcoes = erva.object(forKey: "funcoes") as! [String: AnyObject]
+            funcoes = erva.object(forKey: "funcoes") as! [String: String]
         }   else {
             funcoes = [:]
         }

@@ -63,7 +63,7 @@ class AddViewController: UIViewController {
         
     }
     
-    // Method to return an dictionary with sepated values
+    // Method to return a dictionary with separated values
     private func separateStrings(_ text: String) -> [String: String] {
         // Separando o texto num array
         let separated = text.components(separatedBy: ";")

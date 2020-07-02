@@ -75,8 +75,8 @@ class MainViewController: UITableViewController {
         
         // Configure Cell
         cell.nome?.text = currentHerb.nome
-        cell.locaisAcao?.text = getValuesFromDictionary(dicionario: currentHerb.locaisAcao as NSDictionary)
-        cell.propriedades.text = getValuesFromDictionary(dicionario: currentHerb.propriedades as NSDictionary)
+        cell.locaisAcao?.text = getValuesFromDictionary(dicionario: currentHerb.locaisAcao as NSDictionary, funcoes: false)
+        cell.propriedades.text = getValuesFromDictionary(dicionario: currentHerb.propriedades as NSDictionary, funcoes: false)
         
         return cell
     }

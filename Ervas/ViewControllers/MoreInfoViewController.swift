@@ -23,7 +23,7 @@ class MoreInfoViewController: UIViewController {
         super.viewDidLoad()
         
         nomeFarmacologico?.text = herb.nomeFarmacologico
-        parteUtilizada?.text = getValuesFromDictionary(dicionario: herb.parteUtilizada as NSDictionary)
+        parteUtilizada?.text = getValuesFromDictionary(dicionario: herb.parteUtilizada as NSDictionary, funcoes: false)
         precaucoes?.text = herb.precaucoes
         preocaucoesHC?.constant = precaucoes!.contentSize.height
         
