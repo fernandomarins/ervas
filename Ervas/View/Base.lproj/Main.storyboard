@@ -332,6 +332,179 @@
             </objects>
             <point key="canvasLocation" x="2118.840579710145" y="-168.08035714285714"/>
         </scene>
+        <!--Orgaos Table View Controller-->
+        <scene sceneID="lQt-9S-MKI">
+            <objects>
+                <tableViewController storyboardIdentifier="OrgaoTableVC" id="bPx-Fz-9wJ" customClass="OrgaosTableViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZFy-ms-iUp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOrgao" id="AJm-LD-67p">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AJm-LD-67p" id="4Qv-YC-6MM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bPx-Fz-9wJ" id="z5F-FX-TnG"/>
+                            <outlet property="delegate" destination="bPx-Fz-9wJ" id="vKX-ew-AVA"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="2bA-OM-PDF" kind="show" identifier="toDesarmonias" id="7mM-un-3AJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbW-GQ-SY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119" y="551"/>
+        </scene>
+        <!--Desarmonias Table View Controller-->
+        <scene sceneID="Q5o-Vx-EFk">
+            <objects>
+                <tableViewController storyboardIdentifier="DesarmoniasVC" modalPresentationStyle="fullScreen" id="2bA-OM-PDF" customClass="DesarmoniasTableViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yah-Lf-kjz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="desarmoniaCell" id="Yp3-vg-IVx">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yp3-vg-IVx" id="Rwa-fL-1na">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2bA-OM-PDF" id="vL3-eR-kwd"/>
+                            <outlet property="delegate" destination="2bA-OM-PDF" id="TdX-lD-PUP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="pjw-9y-mwY"/>
+                    <connections>
+                        <segue destination="rZE-qG-CKA" kind="show" identifier="toTratamento" id="O5j-Rq-C3g"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fy9-rb-eY1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2945" y="550"/>
+        </scene>
+        <!--Tratamento View Controller-->
+        <scene sceneID="eHr-F1-p06">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="rZE-qG-CKA" customClass="TratamentoViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ssg-ZX-c2I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wx-DL-mZ5">
+                                <rect key="frame" x="20" y="50" width="374" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="sic-34-61P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SINAIS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFw-tf-lqa">
+                                <rect key="frame" x="20" y="121" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wOp-V8-7ZD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXEMPLO DE DOENÇAS OCIDENTAIS:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeR-Rz-JNB">
+                                <rect key="frame" x="20" y="275" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="kJ6-7u-aA6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SINAIS:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPs-I6-L76">
+                                <rect key="frame" x="20" y="154" width="374" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="113" id="EVj-Cs-gl3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXEMPLO DE DOENÇAS OCIDENTAIS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U01-Fa-dP6">
+                                <rect key="frame" x="20" y="308" width="374" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="113" id="Jqd-GT-708"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRATAMENTO:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meu-Ql-HNk">
+                                <rect key="frame" x="20" y="429" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9LF-8V-x0Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRATAMENTO" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smH-FO-xnU">
+                                <rect key="frame" x="20" y="458" width="374" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="113" id="iDb-yv-DRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="meu-Ql-HNk" secondAttribute="trailing" constant="20" id="0Sn-oD-8ik"/>
+                            <constraint firstItem="xFw-tf-lqa" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="7WA-Ik-Bz6"/>
+                            <constraint firstItem="meu-Ql-HNk" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="87k-et-j6H"/>
+                            <constraint firstItem="nPs-I6-L76" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="CxU-tA-pQg"/>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="U01-Fa-dP6" secondAttribute="trailing" constant="20" id="Dbu-MP-1TJ"/>
+                            <constraint firstItem="meu-Ql-HNk" firstAttribute="top" secondItem="U01-Fa-dP6" secondAttribute="bottom" constant="8" id="Fu3-1c-U0Y"/>
+                            <constraint firstItem="xFw-tf-lqa" firstAttribute="top" secondItem="2wx-DL-mZ5" secondAttribute="bottom" constant="8" id="H6t-BU-3pC"/>
+                            <constraint firstItem="DeR-Rz-JNB" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="J3c-Bv-SQ2"/>
+                            <constraint firstItem="smH-FO-xnU" firstAttribute="top" secondItem="meu-Ql-HNk" secondAttribute="bottom" constant="8" id="PI6-nE-pTn"/>
+                            <constraint firstItem="nPs-I6-L76" firstAttribute="top" secondItem="xFw-tf-lqa" secondAttribute="bottom" constant="12" id="WY8-Ka-R8g"/>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="xFw-tf-lqa" secondAttribute="trailing" constant="20" id="XjK-Bp-yM6"/>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="2wx-DL-mZ5" secondAttribute="trailing" constant="20" id="Zr1-Ws-xkV"/>
+                            <constraint firstItem="U01-Fa-dP6" firstAttribute="top" secondItem="DeR-Rz-JNB" secondAttribute="bottom" constant="12" id="aD3-Ot-Z2W"/>
+                            <constraint firstItem="smH-FO-xnU" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="ahH-5O-B6I"/>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="DeR-Rz-JNB" secondAttribute="trailing" constant="20" id="ezU-0I-SXF"/>
+                            <constraint firstItem="2wx-DL-mZ5" firstAttribute="top" secondItem="Boh-bw-8gy" secondAttribute="top" constant="6" id="jvB-P1-lN5"/>
+                            <constraint firstItem="DeR-Rz-JNB" firstAttribute="top" secondItem="nPs-I6-L76" secondAttribute="bottom" constant="8" id="nhT-v4-f1j"/>
+                            <constraint firstItem="2wx-DL-mZ5" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="qms-vR-AWW"/>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="nPs-I6-L76" secondAttribute="trailing" constant="20" id="rVP-Xj-Wrm"/>
+                            <constraint firstItem="U01-Fa-dP6" firstAttribute="leading" secondItem="Boh-bw-8gy" secondAttribute="leading" constant="20" id="srE-bS-qeM"/>
+                            <constraint firstItem="Boh-bw-8gy" firstAttribute="trailing" secondItem="smH-FO-xnU" secondAttribute="trailing" constant="20" id="w2I-hI-Hwn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Boh-bw-8gy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NJe-95-UDS"/>
+                    <connections>
+                        <outlet property="exemplo" destination="U01-Fa-dP6" id="kkY-JW-3qv"/>
+                        <outlet property="padraoLabel" destination="2wx-DL-mZ5" id="5FG-Vl-BXI"/>
+                        <outlet property="sinais" destination="nPs-I6-L76" id="X95-1V-xwj"/>
+                        <outlet property="tratamento" destination="smH-FO-xnU" id="NLh-zA-fbr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AYl-bD-kf1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3740.579710144928" y="549.77678571428567"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XVH-7R-uJE">
             <objects>
