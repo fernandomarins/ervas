@@ -13,6 +13,6 @@ class CustomCell: UITableViewCell {
     
     @IBOutlet weak var nome: UILabel!
     @IBOutlet weak var locaisAcao: UILabel!
-    @IBOutlet weak var propriedades: UILabel!
+    @IBOutlet weak var categoria: UILabel!
     
 }
