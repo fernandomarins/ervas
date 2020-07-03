@@ -33,6 +33,11 @@ class MainViewController: UITableViewController {
             }
         })
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "ÓRGÃOS", style: .plain, target: self, action: #selector(openPadroes))
+        
+        // Uncomment a próxima linha quando tiver lançado o aplicativo, para sumir o botão de adicionar erva
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(openPadroes))
+        
         // 1
         s.searchResultsUpdater = self
         // 2
@@ -103,6 +108,13 @@ class MainViewController: UITableViewController {
     }
     
     // MARK: CUSTOM METHODS
+    
+    @objc func openPadroes() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "OrgaoTableVC")
+        if let vc = vc {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     // Método para mostrar a categoria das ervas
     func displayCategory(erva: Erva) -> String {
