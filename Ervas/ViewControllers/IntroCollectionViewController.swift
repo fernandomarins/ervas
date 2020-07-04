@@ -19,13 +19,14 @@ class IntroCollectionViewController: UIViewController {
     
     fileprivate let data = [
         CustomData(title: "ERVAS", backgroundImage: #imageLiteral(resourceName: "fotoerva")),
-        CustomData(title: "ÓRGÃOS", backgroundImage: #imageLiteral(resourceName: "fotoelementos"))
+        CustomData(title: "ÓRGÃOS", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
     ]
     
-    fileprivate let collectionView:UICollectionView = {
+    fileprivate let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
+        layout.minimumLineSpacing = 20
         cv.register(CustomCollectionCell.self, forCellWithReuseIdentifier: "cell")
         return cv
     }()
@@ -41,7 +42,8 @@ class IntroCollectionViewController: UIViewController {
         collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
-        collectionView.heightAnchor.constraint(equalToConstant: view.frame.width/2).isActive = true
+        collectionView.heightAnchor.constraint(equalToConstant: view.frame.width * 2).isActive = true
+        
     }
     
 }
@@ -68,8 +70,11 @@ extension IntroCollectionViewController: UICollectionViewDelegateFlowLayout, UIC
             performSegue(withIdentifier: "toOrgaos", sender: self)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
+    }
 }
-
 
 class CustomCollectionCell: UICollectionViewCell {
     
