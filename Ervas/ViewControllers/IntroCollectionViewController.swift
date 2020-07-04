@@ -8,6 +8,8 @@
 
 import UIKit
 
+//https://www.youtube.com/watch?v=k90V115zqRk
+
 struct CustomData {
     var title: String
     var backgroundImage: UIImage
@@ -22,7 +24,6 @@ class IntroCollectionViewController: UIViewController {
     
     fileprivate let collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-//        layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.register(CustomCollectionCell.self, forCellWithReuseIdentifier: "cell")
