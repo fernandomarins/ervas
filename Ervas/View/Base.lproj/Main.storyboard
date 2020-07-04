@@ -355,6 +355,7 @@
                             <outlet property="delegate" destination="bPx-Fz-9wJ" id="vKX-ew-AVA"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="gix-Tr-tFt"/>
                     <connections>
                         <segue destination="2bA-OM-PDF" kind="show" identifier="toDesarmonias" id="7mM-un-3AJ"/>
                     </connections>
@@ -404,7 +405,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wx-DL-mZ5">
-                                <rect key="frame" x="20" y="50" width="374" height="63"/>
+                                <rect key="frame" x="20" y="94" width="374" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="sic-34-61P"/>
                                 </constraints>
@@ -413,7 +414,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SINAIS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFw-tf-lqa">
-                                <rect key="frame" x="20" y="121" width="374" height="21"/>
+                                <rect key="frame" x="20" y="165" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="wOp-V8-7ZD"/>
                                 </constraints>
@@ -422,7 +423,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXEMPLO DE DOENÇAS OCIDENTAIS:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeR-Rz-JNB">
-                                <rect key="frame" x="20" y="275" width="374" height="21"/>
+                                <rect key="frame" x="20" y="319" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="kJ6-7u-aA6"/>
                                 </constraints>
@@ -431,7 +432,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SINAIS:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPs-I6-L76">
-                                <rect key="frame" x="20" y="154" width="374" height="113"/>
+                                <rect key="frame" x="20" y="198" width="374" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="113" id="EVj-Cs-gl3"/>
                                 </constraints>
@@ -440,7 +441,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXEMPLO DE DOENÇAS OCIDENTAIS" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U01-Fa-dP6">
-                                <rect key="frame" x="20" y="308" width="374" height="113"/>
+                                <rect key="frame" x="20" y="352" width="374" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="113" id="Jqd-GT-708"/>
                                 </constraints>
@@ -449,7 +450,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRATAMENTO:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meu-Ql-HNk">
-                                <rect key="frame" x="20" y="429" width="374" height="21"/>
+                                <rect key="frame" x="20" y="473" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9LF-8V-x0Y"/>
                                 </constraints>
@@ -458,7 +459,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRATAMENTO" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smH-FO-xnU">
-                                <rect key="frame" x="20" y="458" width="374" height="113"/>
+                                <rect key="frame" x="20" y="502" width="374" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="113" id="iDb-yv-DRU"/>
                                 </constraints>
@@ -513,16 +514,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jq4-Ik-SEh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.77064443010000006" blue="0.61086874899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.57288293398601042" blue="0.45548712894356258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mV3-iF-SGy" kind="relationship" relationship="rootViewController" id="PTW-5a-Hie"/>
+                        <segue destination="zeo-3F-vtc" kind="relationship" relationship="rootViewController" id="W8j-jj-5lP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LO-Km-AvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1208.6956521739132" y="-168.08035714285714"/>
+            <point key="canvasLocation" x="538" y="-168"/>
         </scene>
         <!--Display Herb View Controller-->
         <scene sceneID="a7C-1d-JpO">
@@ -826,6 +827,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UhW-3N-JHt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3742.0289855072465" y="-168.08035714285714"/>
+        </scene>
+        <!--Intro Collection View Controller-->
+        <scene sceneID="Wn1-qt-iUH">
+            <objects>
+                <viewController id="zeo-3F-vtc" customClass="IntroCollectionViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ST0-E1-JLq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hBD-ug-J1d"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wxz-3x-mOH"/>
+                    <connections>
+                        <segue destination="mV3-iF-SGy" kind="show" identifier="toErvas" id="urw-Xr-54n"/>
+                        <segue destination="bPx-Fz-9wJ" kind="show" identifier="toOrgaos" id="y0N-bM-0Xf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVR-jN-765" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325" y="-168"/>
         </scene>
     </scenes>
 </document>

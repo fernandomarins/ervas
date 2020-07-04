@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49A5BB782CEFFAF6A75744A4 /* Pods_Ervas_ErvasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */; };
+		5503518924B024FC00A9D5F6 /* IntroCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5503518824B024FC00A9D5F6 /* IntroCollectionViewController.swift */; };
 		55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */; };
 		55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */; };
 		55045B9124A9865100715FB2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B9024A9865100715FB2 /* CustomCell.swift */; };
@@ -55,6 +56,7 @@
 		1EDBF0AC8CBDBC23BF77B5DA /* Pods-Ervas-ErvasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas-ErvasUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3747FD4ABA0FDFCB982510EA /* Pods-Ervas-ErvasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas-ErvasUITests.release.xcconfig"; path = "Target Support Files/Pods-Ervas-ErvasUITests/Pods-Ervas-ErvasUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4514F5F72F406E137C89A216 /* Pods-ErvasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.debug.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5503518824B024FC00A9D5F6 /* IntroCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCollectionViewController.swift; sourceTree = "<group>"; };
 		55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerbViewController.swift; sourceTree = "<group>"; };
 		55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		55045B9024A9865100715FB2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		557B20AC24AA11E9006F0A30 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5503518824B024FC00A9D5F6 /* IntroCollectionViewController.swift */,
 				558D085F24A94C080052C1EB /* MainViewController.swift */,
 				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
 				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
@@ -490,6 +493,7 @@
 				55045B9124A9865100715FB2 /* CustomCell.swift in Sources */,
 				558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */,
 				55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */,
+				5503518924B024FC00A9D5F6 /* IntroCollectionViewController.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,
 				558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */,
 			);
