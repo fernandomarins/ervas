@@ -497,8 +497,10 @@
                     <navigationItem key="navigationItem" id="NJe-95-UDS"/>
                     <connections>
                         <outlet property="exemplo" destination="U01-Fa-dP6" id="kkY-JW-3qv"/>
+                        <outlet property="exemploShouldChange" destination="DeR-Rz-JNB" id="2ms-AR-2N7"/>
                         <outlet property="padraoLabel" destination="2wx-DL-mZ5" id="5FG-Vl-BXI"/>
                         <outlet property="sinais" destination="nPs-I6-L76" id="X95-1V-xwj"/>
+                        <outlet property="sinaisShouldChange" destination="xFw-tf-lqa" id="Qj0-6v-D1h"/>
                         <outlet property="tratamento" destination="smH-FO-xnU" id="NLh-zA-fbr"/>
                     </connections>
                 </viewController>

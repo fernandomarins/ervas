@@ -10,8 +10,8 @@ import UIKit
 
 class OrgaosTableViewController: UITableViewController {
     
-    let arrayOfOrgaos = ["Rins", "Bexiga", "Baço-Pâncreas", "Estômago", "Fígado", "Vesícula Biliar",
-    "Coração", "Intestino Delgado", "Pulmão", "Intestino Grosso"]
+    let arrayOfOrgaos = ["Qi, Xue e Jin Ye", "Rins", "Bexiga", "Baço-Pâncreas", "Estômago", "Fígado", "Vesícula Biliar",
+    "Coração", "Intestino Delgado", "Pulmão", "Intestino Grosso", "Síndromes Bi"]
     
     var orgaoSelected: String = ""
 
@@ -42,6 +42,11 @@ class OrgaosTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let desarmoniasVC = segue.destination as? DesarmoniasTableViewController
+        if orgaoSelected == "Qi, Xue e Jin Ye" {
+            desarmoniasVC?.isQiXueJinYe = true
+        } else {
+            desarmoniasVC?.isQiXueJinYe = false
+        }
         desarmoniasVC?.orgao = orgaoSelected
     }
 

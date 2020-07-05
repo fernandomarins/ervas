@@ -19,7 +19,9 @@ class IntroCollectionViewController: UIViewController {
     
     fileprivate let data = [
         CustomData(title: "ERVAS", backgroundImage: #imageLiteral(resourceName: "fotoerva")),
-        CustomData(title: "ÓRGÃOS", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
+        CustomData(title: "PADRÕES", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
+        //CustomData(title: "RELÓGIO", backgroundImage: #imageLiteral(resourceName: "fotoerva")),
+        //CustomData(title: "ELEMENTOS", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
     ]
     
     fileprivate let collectionView: UICollectionView = {
@@ -99,9 +101,9 @@ class CustomCollectionCell: UICollectionViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
-        label.font = label.font.withSize(20)
         label.textAlignment = .center
-        label.font = UIFont(font: .SFUIDisplay, weight: .bold, size: 20)
+        label.numberOfLines = 0
+        label.font = UIFont(font: .SFUIDisplay, weight: .bold, size: 18)
         return label
     }()
     
