@@ -19,8 +19,8 @@ class IntroCollectionViewController: UIViewController {
     
     fileprivate let data = [
         CustomData(title: "ERVAS", backgroundImage: #imageLiteral(resourceName: "fotoerva")),
-        CustomData(title: "PADRÕES", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
-        //CustomData(title: "RELÓGIO", backgroundImage: #imageLiteral(resourceName: "fotoerva")),
+        CustomData(title: "PADRÕES", backgroundImage: #imageLiteral(resourceName: "fotoelementos1")),
+        CustomData(title: "MERIDIANOS", backgroundImage: #imageLiteral(resourceName: "fotoerva"))
         //CustomData(title: "ELEMENTOS", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
     ]
     
@@ -66,10 +66,15 @@ extension IntroCollectionViewController: UICollectionViewDelegateFlowLayout, UIC
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 0 {
+        switch indexPath.item {
+        case 0:
             performSegue(withIdentifier: "toErvas", sender: self)
-        } else {
+        case 1:
             performSegue(withIdentifier: "toOrgaos", sender: self)
+        case 2:
+            performSegue(withIdentifier: "toMeridianos", sender: self)
+        default:
+            performSegue(withIdentifier: "toErvas", sender: self)
         }
     }
     
