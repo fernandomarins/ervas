@@ -18,9 +18,9 @@ struct CustomData {
 class IntroCollectionViewController: UIViewController {
     
     fileprivate let data = [
-        CustomData(title: "ERVAS", backgroundImage: #imageLiteral(resourceName: "fotoerva")),
-        CustomData(title: "PADRÕES", backgroundImage: #imageLiteral(resourceName: "fotoelementos1")),
-        CustomData(title: "MERIDIANOS", backgroundImage: #imageLiteral(resourceName: "fotoerva"))
+        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "ervas")),
+        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "padrões")),
+        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "med"))
         //CustomData(title: "ELEMENTOS", backgroundImage: #imageLiteral(resourceName: "fotoelementos1"))
     ]
     
@@ -45,7 +45,6 @@ class IntroCollectionViewController: UIViewController {
         collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: view.frame.width * 2).isActive = true
-        
     }
     
 }
@@ -108,7 +107,7 @@ class CustomCollectionCell: UICollectionViewCell {
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.font = UIFont(font: .SFUIDisplay, weight: .bold, size: 18)
+        label.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
         return label
     }()
     

@@ -34,9 +34,8 @@
 		55E11ED624B3C953002DF041 /* ImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E11ED524B3C953002DF041 /* ImageViewZoom.swift */; };
 		55E11ED824B3C994002DF041 /* MeridianosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E11ED724B3C994002DF041 /* MeridianosViewController.swift */; };
 		55E11EDF24B3CA18002DF041 /* meridiano4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EDB24B3CA18002DF041 /* meridiano4.jpg */; };
-		55E11EE024B3CA18002DF041 /* meridiano3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EDC24B3CA18002DF041 /* meridiano3.jpg */; };
-		55E11EE124B3CA18002DF041 /* meridiano2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EDD24B3CA18002DF041 /* meridiano2.jpg */; };
-		55E11EE324B3CBCC002DF041 /* meridiano1.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE224B3CBCC002DF041 /* meridiano1.png */; };
+		55E11EE624B3F46A002DF041 /* meridiano2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE424B3F46A002DF041 /* meridiano2.jpg */; };
+		55E11EE724B3F46A002DF041 /* meridiano3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE524B3F46A002DF041 /* meridiano3.jpg */; };
 		C21501364413CF2C3E5FAF44 /* Pods_ErvasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B55BEFE625F5DDBE304B49 /* Pods_ErvasTests.framework */; };
 		CFBC0A6F10E4FD640C21AF48 /* Pods_Ervas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8659CA4978E83D78AF125E /* Pods_Ervas.framework */; };
 /* End PBXBuildFile section */
@@ -94,9 +93,8 @@
 		55E11ED524B3C953002DF041 /* ImageViewZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewZoom.swift; sourceTree = "<group>"; };
 		55E11ED724B3C994002DF041 /* MeridianosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeridianosViewController.swift; sourceTree = "<group>"; };
 		55E11EDB24B3CA18002DF041 /* meridiano4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano4.jpg; sourceTree = "<group>"; };
-		55E11EDC24B3CA18002DF041 /* meridiano3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano3.jpg; sourceTree = "<group>"; };
-		55E11EDD24B3CA18002DF041 /* meridiano2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano2.jpg; sourceTree = "<group>"; };
-		55E11EE224B3CBCC002DF041 /* meridiano1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meridiano1.png; sourceTree = "<group>"; };
+		55E11EE424B3F46A002DF041 /* meridiano2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano2.jpg; sourceTree = "<group>"; };
+		55E11EE524B3F46A002DF041 /* meridiano3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano3.jpg; sourceTree = "<group>"; };
 		55E3DC1624AB7744007DDE76 /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ervas_ErvasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.release.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -234,9 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				555961B124AFBB900050693F /* logo + nome.png */,
-				55E11EE224B3CBCC002DF041 /* meridiano1.png */,
-				55E11EDD24B3CA18002DF041 /* meridiano2.jpg */,
-				55E11EDC24B3CA18002DF041 /* meridiano3.jpg */,
+				55E11EE424B3F46A002DF041 /* meridiano2.jpg */,
+				55E11EE524B3F46A002DF041 /* meridiano3.jpg */,
 				55E11EDB24B3CA18002DF041 /* meridiano4.jpg */,
 			);
 			path = Images;
@@ -374,14 +371,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E11EE324B3CBCC002DF041 /* meridiano1.png in Resources */,
 				558D086B24A94C090052C1EB /* LaunchScreen.storyboard in Resources */,
-				55E11EE124B3CA18002DF041 /* meridiano2.jpg in Resources */,
+				55E11EE724B3F46A002DF041 /* meridiano3.jpg in Resources */,
 				55D56B9F24AB589C0025FCA3 /* GoogleService-Info.plist in Resources */,
+				55E11EE624B3F46A002DF041 /* meridiano2.jpg in Resources */,
 				555961B224AFBB900050693F /* logo + nome.png in Resources */,
 				55E11EDF24B3CA18002DF041 /* meridiano4.jpg in Resources */,
 				558D086824A94C090052C1EB /* Assets.xcassets in Resources */,
-				55E11EE024B3CA18002DF041 /* meridiano3.jpg in Resources */,
 				558D086324A94C080052C1EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

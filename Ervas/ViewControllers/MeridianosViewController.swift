@@ -11,17 +11,27 @@ import UIKit
 // https://medium.com/@raj.amsarajm93/ios-swift-tutorial-imageview-zooming-and-horizontal-paging-dca0acb0165e
 
 class MeridianosViewController: UIViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnTap = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.hidesBarsOnTap = false
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         let viewHeight: CGFloat = view.bounds.size.height
         let viewWidth: CGFloat = view.bounds.size.width
         
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: viewHeight))
         scrollView.isPagingEnabled = true
         
-        let images = ["meridiano1","meridiano2.jpg","meridiano3.jpg","meridiano4.jpg"]
+        let images = ["meridiano2.jpg","meridiano3.jpg","meridiano4.jpg"]
         var xPostion: CGFloat = 0
         
         for image in images {

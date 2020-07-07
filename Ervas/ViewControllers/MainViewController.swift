@@ -93,7 +93,7 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = storyboard?.instantiateViewController(identifier: "detailVC") as! DisplayHerbViewController
         
-        let currentHerb: Erva
+        let currentHerb: Erva?
         // Dar push na view correta
         if isFiltering() {
             currentHerb = filteredHerbs[indexPath.row]
