@@ -38,6 +38,10 @@ extension UIViewController {
     }
 }
 
+extension Notification.Name {
+    static let didReceiveData = Notification.Name("didReceiveData")
+}
+
 // https://stackoverflow.com/questions/31369711/how-to-use-new-san-francisco-font-in-ios-9
 //extension UIFont {
 //

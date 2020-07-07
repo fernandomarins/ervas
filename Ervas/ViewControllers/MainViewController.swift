@@ -54,6 +54,11 @@ class MainViewController: UITableViewController {
                 
         navigationItem.title = "MATÉRIA MÉDICA"
         
+        let backButton = UIBarButtonItem(title: "MATÉRIA MÉDICA", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
+        // Trocando nome do back buttom da view que será pushed
+        navigationItem.backBarButtonItem = backButton
+        
     }
     
     // MARK: DELEGATE METHODS
