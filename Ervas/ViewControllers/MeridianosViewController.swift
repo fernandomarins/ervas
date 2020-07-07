@@ -24,6 +24,8 @@ class MeridianosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "MERIDIANOS"
     
         let viewHeight: CGFloat = view.bounds.size.height
         let viewWidth: CGFloat = view.bounds.size.width

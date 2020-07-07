@@ -75,18 +75,18 @@ extension ElementsViewController: UICollectionViewDelegateFlowLayout, UICollecti
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        switch indexPath.item {
-        case 0:
-            performSegue(withIdentifier: "toErvas", sender: self)
-        case 1:
-            performSegue(withIdentifier: "toOrgaos", sender: self)
-        case 2:
-            performSegue(withIdentifier: "toMeridianos", sender: self)
-        default:
-            performSegue(withIdentifier: "toErvas", sender: self)
-        }
-    }
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        switch indexPath.item {
+//        case 0:
+//            performSegue(withIdentifier: "toErvas", sender: self)
+//        case 1:
+//            performSegue(withIdentifier: "toOrgaos", sender: self)
+//        case 2:
+//            performSegue(withIdentifier: "toMeridianos", sender: self)
+//        default:
+//            performSegue(withIdentifier: "toErvas", sender: self)
+//        }
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 20, left: 0, bottom: 10, right: 0)
