@@ -28,13 +28,10 @@ class DisplayHerbViewController: UIViewController {
         funcoesHC?.constant = funcoes!.contentSize.height
         doses?.text = herb.doses
         
+        let backButton = UIBarButtonItem(title: "ERVA", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
         // Trocando nome do back buttom da view que será pushed
-        navigationItem.backBarButtonItem = UIBarButtonItem (
-            title: "ERVA",
-            style: .plain,
-            target: nil,
-            action: nil
-        )
+        navigationItem.backBarButtonItem = backButton
         
         setSizeToFit()
     }

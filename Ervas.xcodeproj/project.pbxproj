@@ -31,6 +31,11 @@
 		558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D089024A94EDF0052C1EB /* ErvasList.swift */; };
 		559004A724AD1170008A3DD7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559004A624AD1170008A3DD7 /* Extensions.swift */; };
 		55D56B9F24AB589C0025FCA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55D56B9E24AB589C0025FCA3 /* GoogleService-Info.plist */; };
+		55E11ED624B3C953002DF041 /* ImageViewZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E11ED524B3C953002DF041 /* ImageViewZoom.swift */; };
+		55E11ED824B3C994002DF041 /* MeridianosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E11ED724B3C994002DF041 /* MeridianosViewController.swift */; };
+		55E11EDF24B3CA18002DF041 /* meridiano4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EDB24B3CA18002DF041 /* meridiano4.jpg */; };
+		55E11EE624B3F46A002DF041 /* meridiano2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE424B3F46A002DF041 /* meridiano2.jpg */; };
+		55E11EE724B3F46A002DF041 /* meridiano3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE524B3F46A002DF041 /* meridiano3.jpg */; };
 		C21501364413CF2C3E5FAF44 /* Pods_ErvasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B55BEFE625F5DDBE304B49 /* Pods_ErvasTests.framework */; };
 		CFBC0A6F10E4FD640C21AF48 /* Pods_Ervas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8659CA4978E83D78AF125E /* Pods_Ervas.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +90,11 @@
 		558D089024A94EDF0052C1EB /* ErvasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErvasList.swift; sourceTree = "<group>"; };
 		559004A624AD1170008A3DD7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55D56B9E24AB589C0025FCA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55E11ED524B3C953002DF041 /* ImageViewZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewZoom.swift; sourceTree = "<group>"; };
+		55E11ED724B3C994002DF041 /* MeridianosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeridianosViewController.swift; sourceTree = "<group>"; };
+		55E11EDB24B3CA18002DF041 /* meridiano4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano4.jpg; sourceTree = "<group>"; };
+		55E11EE424B3F46A002DF041 /* meridiano2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano2.jpg; sourceTree = "<group>"; };
+		55E11EE524B3F46A002DF041 /* meridiano3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano3.jpg; sourceTree = "<group>"; };
 		55E3DC1624AB7744007DDE76 /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ervas_ErvasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.release.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5503518824B024FC00A9D5F6 /* IntroCollectionViewController.swift */,
+				55E11ED724B3C994002DF041 /* MeridianosViewController.swift */,
 				558D085F24A94C080052C1EB /* MainViewController.swift */,
 				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
 				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
@@ -155,6 +166,7 @@
 				557B20B324AA1F92006F0A30 /* Colors.swift */,
 				55045B9024A9865100715FB2 /* CustomCell.swift */,
 				55E3DC1624AB7744007DDE76 /* logo + nome.png */,
+				55E11ED524B3C953002DF041 /* ImageViewZoom.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,7 +198,7 @@
 			children = (
 				558D085B24A94C080052C1EB /* AppDelegate.swift */,
 				558D085D24A94C080052C1EB /* SceneDelegate.swift */,
-				555961B124AFBB900050693F /* logo + nome.png */,
+				55E11ED924B3CA05002DF041 /* Images */,
 				557B20AC24AA11E9006F0A30 /* ViewControllers */,
 				557B20AE24AA11FE006F0A30 /* View */,
 				557B20AD24AA11F4006F0A30 /* Model */,
@@ -214,6 +226,17 @@
 				558D088224A94C0A0052C1EB /* Info.plist */,
 			);
 			path = ErvasUITests;
+			sourceTree = "<group>";
+		};
+		55E11ED924B3CA05002DF041 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				555961B124AFBB900050693F /* logo + nome.png */,
+				55E11EE424B3F46A002DF041 /* meridiano2.jpg */,
+				55E11EE524B3F46A002DF041 /* meridiano3.jpg */,
+				55E11EDB24B3CA18002DF041 /* meridiano4.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		A50EC987A9BF47C95484CAC1 /* Pods */ = {
@@ -349,8 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				558D086B24A94C090052C1EB /* LaunchScreen.storyboard in Resources */,
+				55E11EE724B3F46A002DF041 /* meridiano3.jpg in Resources */,
 				55D56B9F24AB589C0025FCA3 /* GoogleService-Info.plist in Resources */,
+				55E11EE624B3F46A002DF041 /* meridiano2.jpg in Resources */,
 				555961B224AFBB900050693F /* logo + nome.png in Resources */,
+				55E11EDF24B3CA18002DF041 /* meridiano4.jpg in Resources */,
 				558D086824A94C090052C1EB /* Assets.xcassets in Resources */,
 				558D086324A94C080052C1EB /* Main.storyboard in Resources */,
 			);
@@ -493,8 +519,10 @@
 				55045B9124A9865100715FB2 /* CustomCell.swift in Sources */,
 				558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */,
 				55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */,
+				55E11ED824B3C994002DF041 /* MeridianosViewController.swift in Sources */,
 				5503518924B024FC00A9D5F6 /* IntroCollectionViewController.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,
+				55E11ED624B3C953002DF041 /* ImageViewZoom.swift in Sources */,
 				558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -54,6 +54,11 @@ class MainViewController: UITableViewController {
                 
         navigationItem.title = "MATÉRIA MÉDICA"
         
+        let backButton = UIBarButtonItem(title: "MATÉRIA MÉDICA", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
+        // Trocando nome do back buttom da view que será pushed
+        navigationItem.backBarButtonItem = backButton
+        
     }
     
     // MARK: DELEGATE METHODS
@@ -93,7 +98,7 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = storyboard?.instantiateViewController(identifier: "detailVC") as! DisplayHerbViewController
         
-        let currentHerb: Erva
+        let currentHerb: Erva?
         // Dar push na view correta
         if isFiltering() {
             currentHerb = filteredHerbs[indexPath.row]
