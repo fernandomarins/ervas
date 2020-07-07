@@ -11,7 +11,6 @@ import UIKit
 //https://www.youtube.com/watch?v=k90V115zqRk
 
 struct CustomData {
-    var title: String
     var backgroundImage: UIImage
 }
 
@@ -21,10 +20,11 @@ class IntroCollectionViewController: UIViewController {
     let calendar = Calendar.current
     
     fileprivate let data = [
-        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "ervas")),
-        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "padrões")),
-        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "med")),
-        CustomData(title: "", backgroundImage: #imageLiteral(resourceName: "elementos"))
+        CustomData(backgroundImage: #imageLiteral(resourceName: "ervas")),
+        CustomData(backgroundImage: #imageLiteral(resourceName: "padrões")),
+        CustomData(backgroundImage: #imageLiteral(resourceName: "med")),
+        CustomData(backgroundImage: #imageLiteral(resourceName: "elementos")),
+        CustomData(backgroundImage: #imageLiteral(resourceName: "ficha"))
     ]
     
     fileprivate let collectionView: UICollectionView = {
@@ -42,7 +42,7 @@ class IntroCollectionViewController: UIViewController {
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+        label.font = UIFont(name: "HelveticaNeue-Bold", size: 13)
         label.textColor = .white
         return label
     }()
@@ -85,53 +85,53 @@ class IntroCollectionViewController: UIViewController {
         let hour = calendar.component(.hour, from: date)
         switch hour {
         case 1:
-            label.text = "ÓRGÃO ATUANTE: FÍGADO"
-            case 2:
-                label.text = "ÓRGÃO ATUANTE: FÍGADO"
-            case 3:
-                label.text = "ÓRGÃO ATUANTE: PULMÃO"
-            case 4:
-                label.text = "ÓRGÃO ATUANTE: PULMÃO"
-            case 5:
-                label.text = "ÓRGÃO ATUANTE: INTESTINO GROSSO"
-            case 6:
-                label.text = "ÓRGÃO ATUANTE: INTESTINO GROSSO"
-            case 7:
-                label.text = "ÓRGÃO ATUANTE: ESTÔMAGO"
-            case 8:
-                label.text = "ÓRGÃO ATUANTE: ESTÔMAGO"
-            case 9:
-                label.text = "ÓRGÃO ATUANTE: BAÇO-PÂNCREAS"
-            case 10:
-                label.text = "ÓRGÃO ATUANTE: BAÇO-PÂNCREAS"
-            case 11:
-                label.text = "ÓRGÃO ATUANTE: CORAÇÃO"
-            case 12:
-                label.text = "ÓRGÃO ATUANTE: CORAÇÃO"
-            case 13:
-                label.text = "ÓRGÃO ATUANTE: INTESTINO DELGADO"
-            case 14:
-                label.text = "ÓRGÃO ATUANTE: INTESTINO DELGADO"
-            case 15:
-                label.text = "ÓRGÃO ATUANTE: BEXIGA"
-            case 16:
-                label.text = "ÓRGÃO ATUANTE: BEXIGA"
-            case 17:
-                label.text = "ÓRGÃO ATUANTE: RIM"
-            case 18:
-                label.text = "ÓRGÃO ATUANTE: RIM"
-            case 19:
-                label.text = "ÓRGÃO ATUANTE: CIRCULAÇÃO-SEXO"
-            case 20:
-                label.text = "ÓRGÃO ATUANTE: CIRCULAÇÃO-SEXO"
-            case 21:
-                label.text = "ÓRGÃO ATUANTE: TRIPLO AQUECEDOR"
-            case 22:
-                label.text = "ÓRGÃO ATUANTE: TRIPLO AQUECEDOR"
-            case 23:
-                label.text = "ÓRGÃO ATUANTE: VESÍCULA BILIAR"
+            label.text = "MERIDIANO ATUANTE: FÍGADO"
+        case 2:
+            label.text = "MERIDIANO ATUANTE: FÍGADO"
+        case 3:
+            label.text = "MERIDIANO ATUANTE: PULMÃO"
+        case 4:
+            label.text = "MERIDIANO ATUANTE: PULMÃO"
+        case 5:
+            label.text = "MERIDIANO ATUANTE: INTESTINO GROSSO"
+        case 6:
+            label.text = "MERIDIANO ATUANTE: INTESTINO GROSSO"
+        case 7:
+            label.text = "MERIDIANO ATUANTE: ESTÔMAGO"
+        case 8:
+            label.text = "MERIDIANO ATUANTE: ESTÔMAGO"
+        case 9:
+            label.text = "MERIDIANO ATUANTE: BAÇO-PÂNCREAS"
+        case 10:
+            label.text = "MERIDIANO ATUANTE: BAÇO-PÂNCREAS"
+        case 11:
+            label.text = "MERIDIANO ATUANTE: CORAÇÃO"
+        case 12:
+            label.text = "MERIDIANO ATUANTE: CORAÇÃO"
+        case 13:
+            label.text = "MERIDIANO ATUANTE: INTESTINO DELGADO"
+        case 14:
+            label.text = "MERIDIANO ATUANTE: INTESTINO DELGADO"
+        case 15:
+            label.text = "MERIDIANO ATUANTE: BEXIGA"
+        case 16:
+            label.text = "MERIDIANO ATUANTE: BEXIGA"
+        case 17:
+            label.text = "MERIDIANO ATUANTE: RIM"
+        case 18:
+            label.text = "MERIDIANO ATUANTE: RIM"
+        case 19:
+            label.text = "MERIDIANO ATUANTE: CIRCULAÇÃO-SEXO"
+        case 20:
+            label.text = "MERIDIANO ATUANTE: CIRCULAÇÃO-SEXO"
+        case 21:
+            label.text = "MERIDIANO ATUANTE: TRIPLO AQUECEDOR"
+        case 22:
+            label.text = "MERIDIANO ATUANTE: TRIPLO AQUECEDOR"
+        case 23:
+            label.text = "MERIDIANO ATUANTE: VESÍCULA BILIAR"
         default:
-            label.text = "ÓRGÃO ATUANTE: VESÍCULA BILIAR"
+            label.text = "MERIDIANO ATUANTE: VESÍCULA BILIAR"
         }
     }
 }
@@ -161,6 +161,8 @@ extension IntroCollectionViewController: UICollectionViewDelegateFlowLayout, UIC
             performSegue(withIdentifier: "toMeridianos", sender: self)
         case 3:
             performSegue(withIdentifier: "toElements", sender: self)
+        case 4:
+            performSegue(withIdentifier: "toAvaliacao", sender: self)
         default:
             performSegue(withIdentifier: "toErvas", sender: self)
         }
@@ -177,7 +179,6 @@ class CustomCollectionCell: UICollectionViewCell {
         didSet {
             guard let data = data else { return }
             bg.image = data.backgroundImage
-            text.text = data.title
         }
     }
     
@@ -190,31 +191,15 @@ class CustomCollectionCell: UICollectionViewCell {
         return iv
     }()
     
-    fileprivate let text: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .white
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
-        return label
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: .zero)
         
         contentView.addSubview(bg)
-        contentView.addSubview(text)
         
         bg.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         bg.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         bg.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         bg.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        
-        let margins = contentView.layoutMarginsGuide
-        text.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        text.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -5).isActive = true
-        
         
     }
     
