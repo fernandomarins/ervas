@@ -251,10 +251,10 @@
             </objects>
             <point key="canvasLocation" x="2118.840579710145" y="-875.22321428571422"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Ervas View Controller-->
         <scene sceneID="co7-vz-Ald">
             <objects>
-                <tableViewController id="mV3-iF-SGy" customClass="MainViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="mV3-iF-SGy" customClass="ErvasViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NAZ-Z7-e8D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

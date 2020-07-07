@@ -12,6 +12,7 @@
 		55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */; };
 		55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */; };
 		55045B9124A9865100715FB2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B9024A9865100715FB2 /* CustomCell.swift */; };
+		552FBF3724B4CA9A00E6B93E /* ErvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */; };
 		552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FDB9824ABED100032FCF5 /* AddViewController.swift */; };
 		555961B224AFBB900050693F /* logo + nome.png in Resources */ = {isa = PBXBuildFile; fileRef = 555961B124AFBB900050693F /* logo + nome.png */; };
 		555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555961B324AFC3D10050693F /* OrgaosTableViewController.swift */; };
@@ -20,7 +21,6 @@
 		557B20B424AA1F92006F0A30 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B20B324AA1F92006F0A30 /* Colors.swift */; };
 		558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085B24A94C080052C1EB /* AppDelegate.swift */; };
 		558D085E24A94C080052C1EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085D24A94C080052C1EB /* SceneDelegate.swift */; };
-		558D086024A94C080052C1EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D085F24A94C080052C1EB /* MainViewController.swift */; };
 		558D086324A94C080052C1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558D086124A94C080052C1EB /* Main.storyboard */; };
 		558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 558D086424A94C080052C1EB /* Ervas.xcdatamodeld */; };
 		558D086824A94C090052C1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558D086724A94C090052C1EB /* Assets.xcassets */; };
@@ -65,6 +65,7 @@
 		55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHerbViewController.swift; sourceTree = "<group>"; };
 		55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		55045B9024A9865100715FB2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErvasViewController.swift; sourceTree = "<group>"; };
 		552FDB9824ABED100032FCF5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		555961B124AFBB900050693F /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		555961B324AFC3D10050693F /* OrgaosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgaosTableViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		558D085824A94C080052C1EB /* Ervas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ervas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558D085B24A94C080052C1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558D085D24A94C080052C1EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		558D085F24A94C080052C1EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		558D086224A94C080052C1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		558D086524A94C080052C1EB /* Ervas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ervas.xcdatamodel; sourceTree = "<group>"; };
 		558D086724A94C090052C1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 			children = (
 				5503518824B024FC00A9D5F6 /* IntroCollectionViewController.swift */,
 				55E11ED724B3C994002DF041 /* MeridianosViewController.swift */,
-				558D085F24A94C080052C1EB /* MainViewController.swift */,
+				552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */,
 				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
 				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
 				555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */,
@@ -512,7 +512,6 @@
 				557B20B424AA1F92006F0A30 /* Colors.swift in Sources */,
 				555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */,
 				555961B824AFD5750050693F /* TratamentoViewController.swift in Sources */,
-				558D086024A94C080052C1EB /* MainViewController.swift in Sources */,
 				552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */,
 				55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */,
 				558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */,
@@ -521,6 +520,7 @@
 				55045B8F24A9707000715FB2 /* MoreInfoViewController.swift in Sources */,
 				55E11ED824B3C994002DF041 /* MeridianosViewController.swift in Sources */,
 				5503518924B024FC00A9D5F6 /* IntroCollectionViewController.swift in Sources */,
+				552FBF3724B4CA9A00E6B93E /* ErvasViewController.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,
 				55E11ED624B3C953002DF041 /* ImageViewZoom.swift in Sources */,
 				558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */,

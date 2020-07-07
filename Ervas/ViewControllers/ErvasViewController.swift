@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class MainViewController: UITableViewController {
+class ErvasViewController: UITableViewController {
     
     // Criando o UISearchController
     // https://www.iosapptemplates.com/blog/ios-programming/uisearchcontroller-swift
@@ -205,7 +205,7 @@ class MainViewController: UITableViewController {
 
 }
 
-extension MainViewController: UISearchResultsUpdating {
+extension ErvasViewController: UISearchResultsUpdating {
   func updateSearchResults(for searchController: UISearchController) {
     // Mostra os valores que estão sendo buscados
     filteredContentForSearchText(search: s.searchBar.text!)
