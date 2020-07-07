@@ -92,6 +92,14 @@ class EvaluationFormTableViewController: UITableViewController {
         return [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10]
     }()
     
+    var checked = [IndexPath]()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.allowsMultipleSelection = true
+        tableView.allowsMultipleSelectionDuringEditing = true
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
        return mySections.count
     }
@@ -110,15 +118,26 @@ class EvaluationFormTableViewController: UITableViewController {
         cell.textLabel?.numberOfLines = 0
         return cell
     }
-//
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) {
+            checked.append(indexPath)
+            cell.accessoryType = .checkmark
+        }
+    }
+    
+//    func find(value searchValue: IndexPath, in array: [String]) -> Int? {
+//        for (index, value) in array.enumerated() {
+//            if value == searchValue {
+//                return index
+//            }
+//        }
+//        return nil
+//    }
 //    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
 //        if let cell = tableView.cellForRow(at: indexPath) {
+//            find(value: indexPath, in: <#T##[String]#>)
 //            cell.accessoryType = .none
-//        }
-//    }
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let cell = tableView.cellForRow(at: indexPath) {
-//            cell.accessoryType = .checkmark
 //        }
 //    }
 }
