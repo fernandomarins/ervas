@@ -42,6 +42,14 @@ extension Notification.Name {
     static let didReceiveData = Notification.Name("didReceiveData")
 }
 
+extension UIViewController {
+    func presentOnRoot(`with` viewController : UIViewController){
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        present(navigationController, animated: true, completion: nil)
+    }
+}
+
 // https://stackoverflow.com/questions/31369711/how-to-use-new-san-francisco-font-in-ios-9
 //extension UIFont {
 //

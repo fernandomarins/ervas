@@ -14,6 +14,7 @@
 		55045B9124A9865100715FB2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55045B9024A9865100715FB2 /* CustomCell.swift */; };
 		552FBF3724B4CA9A00E6B93E /* ErvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */; };
 		552FBF3924B4CC8600E6B93E /* ElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FBF3824B4CC8600E6B93E /* ElementsViewController.swift */; };
+		552FBF3B24B4E22B00E6B93E /* EvaluationFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */; };
 		552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FDB9824ABED100032FCF5 /* AddViewController.swift */; };
 		555961B224AFBB900050693F /* logo + nome.png in Resources */ = {isa = PBXBuildFile; fileRef = 555961B124AFBB900050693F /* logo + nome.png */; };
 		555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555961B324AFC3D10050693F /* OrgaosTableViewController.swift */; };
@@ -68,6 +69,7 @@
 		55045B9024A9865100715FB2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErvasViewController.swift; sourceTree = "<group>"; };
 		552FBF3824B4CC8600E6B93E /* ElementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsViewController.swift; sourceTree = "<group>"; };
+		552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationFormTableViewController.swift; sourceTree = "<group>"; };
 		552FDB9824ABED100032FCF5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		555961B124AFBB900050693F /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		555961B324AFC3D10050693F /* OrgaosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgaosTableViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				555961B724AFD5750050693F /* TratamentoViewController.swift */,
 				55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */,
 				552FDB9824ABED100032FCF5 /* AddViewController.swift */,
+				552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */,
 				559004A624AD1170008A3DD7 /* Extensions.swift */,
 			);
 			path = ViewControllers;
@@ -510,6 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				558D088F24A94D950052C1EB /* Erva.swift in Sources */,
+				552FBF3B24B4E22B00E6B93E /* EvaluationFormTableViewController.swift in Sources */,
 				559004A724AD1170008A3DD7 /* Extensions.swift in Sources */,
 				555961B624AFC6B40050693F /* DesarmoniasTableViewController.swift in Sources */,
 				557B20B424AA1F92006F0A30 /* Colors.swift in Sources */,
