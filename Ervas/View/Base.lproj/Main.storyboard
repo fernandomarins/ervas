@@ -914,5 +914,21 @@
             </objects>
             <point key="canvasLocation" x="2119" y="-846"/>
         </scene>
+        <!--Resultados View Controller-->
+        <scene sceneID="p3d-H9-Lxy">
+            <objects>
+                <viewController storyboardIdentifier="ResultadosVC" id="Nud-ay-37I" customClass="ResultadosViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jwf-PD-wOX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bW6-8h-8Eb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZC9-Bt-Hs7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0W-OW-H9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="-1522"/>
+        </scene>
     </scenes>
 </document>

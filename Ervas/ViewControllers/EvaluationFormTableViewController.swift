@@ -98,6 +98,18 @@ class EvaluationFormTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.allowsMultipleSelection = true
         tableView.allowsMultipleSelectionDuringEditing = true
+        
+        title = "FORMULÁRIO"
+        
+        let finish = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
+        finish.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = finish
+    }
+    
+    @objc func done() {
+        let vc = storyboard?.instantiateViewController(identifier: "ResultadosVC") as! ResultadosViewController
+        presentOnRoot(with: vc)
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -115,7 +127,17 @@ class EvaluationFormTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = mySections[indexPath.section][indexPath.row]
+        
+        cell.selectionStyle = .none
+        if let selectedRows = tableView.indexPathsForSelectedRows,
+            selectedRows.contains(indexPath) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         cell.textLabel?.numberOfLines = 0
+        
         return cell
     }
     
@@ -124,6 +146,8 @@ class EvaluationFormTableViewController: UITableViewController {
             checked.append(indexPath)
             cell.accessoryType = .checkmark
         }
+        
+        print(checked)
     }
     
 //    func find(value searchValue: IndexPath, in array: [String]) -> Int? {
