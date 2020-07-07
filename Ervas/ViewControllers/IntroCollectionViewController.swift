@@ -159,6 +159,8 @@ extension IntroCollectionViewController: UICollectionViewDelegateFlowLayout, UIC
             performSegue(withIdentifier: "toOrgaos", sender: self)
         case 2:
             performSegue(withIdentifier: "toMeridianos", sender: self)
+        case 3:
+            performSegue(withIdentifier: "toElements", sender: self)
         default:
             performSegue(withIdentifier: "toErvas", sender: self)
         }
