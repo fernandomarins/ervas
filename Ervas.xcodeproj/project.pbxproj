@@ -17,6 +17,8 @@
 		552FBF3B24B4E22B00E6B93E /* EvaluationFormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */; };
 		552FBF3D24B52AC000E6B93E /* ResultadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FBF3C24B52AC000E6B93E /* ResultadosViewController.swift */; };
 		552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FDB9824ABED100032FCF5 /* AddViewController.swift */; };
+		5537471224B63842005182E1 /* EmocoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537471124B63842005182E1 /* EmocoesViewController.swift */; };
+		5537471624B641EB005182E1 /* emocoesgrafico.png in Resources */ = {isa = PBXBuildFile; fileRef = 5537471524B641EB005182E1 /* emocoesgrafico.png */; };
 		555961B224AFBB900050693F /* logo + nome.png in Resources */ = {isa = PBXBuildFile; fileRef = 555961B124AFBB900050693F /* logo + nome.png */; };
 		555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555961B324AFC3D10050693F /* OrgaosTableViewController.swift */; };
 		555961B624AFC6B40050693F /* DesarmoniasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */; };
@@ -73,6 +75,8 @@
 		552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationFormTableViewController.swift; sourceTree = "<group>"; };
 		552FBF3C24B52AC000E6B93E /* ResultadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadosViewController.swift; sourceTree = "<group>"; };
 		552FDB9824ABED100032FCF5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		5537471124B63842005182E1 /* EmocoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmocoesViewController.swift; sourceTree = "<group>"; };
+		5537471524B641EB005182E1 /* emocoesgrafico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emocoesgrafico.png; sourceTree = "<group>"; };
 		555961B124AFBB900050693F /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		555961B324AFC3D10050693F /* OrgaosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgaosTableViewController.swift; sourceTree = "<group>"; };
 		555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesarmoniasTableViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				55E11ED724B3C994002DF041 /* MeridianosViewController.swift */,
 				552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */,
 				552FBF3824B4CC8600E6B93E /* ElementsViewController.swift */,
+				5537471124B63842005182E1 /* EmocoesViewController.swift */,
 				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
 				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
 				555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */,
@@ -244,6 +249,7 @@
 				55E11EE424B3F46A002DF041 /* meridiano2.jpg */,
 				55E11EE524B3F46A002DF041 /* meridiano3.jpg */,
 				55E11EDB24B3CA18002DF041 /* meridiano4.jpg */,
+				5537471524B641EB005182E1 /* emocoesgrafico.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			files = (
 				558D086B24A94C090052C1EB /* LaunchScreen.storyboard in Resources */,
 				55E11EE724B3F46A002DF041 /* meridiano3.jpg in Resources */,
+				5537471624B641EB005182E1 /* emocoesgrafico.png in Resources */,
 				55D56B9F24AB589C0025FCA3 /* GoogleService-Info.plist in Resources */,
 				55E11EE624B3F46A002DF041 /* meridiano2.jpg in Resources */,
 				555961B224AFBB900050693F /* logo + nome.png in Resources */,
@@ -523,6 +530,7 @@
 				555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */,
 				555961B824AFD5750050693F /* TratamentoViewController.swift in Sources */,
 				552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */,
+				5537471224B63842005182E1 /* EmocoesViewController.swift in Sources */,
 				55045B8D24A9533400715FB2 /* DisplayHerbViewController.swift in Sources */,
 				558D085C24A94C080052C1EB /* AppDelegate.swift in Sources */,
 				55045B9124A9865100715FB2 /* CustomCell.swift in Sources */,

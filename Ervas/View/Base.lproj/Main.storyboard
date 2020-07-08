@@ -880,6 +880,9 @@
                         <viewLayoutGuide key="safeArea" id="S2f-ie-sIo"/>
                     </view>
                     <navigationItem key="navigationItem" id="HUq-Bi-RjI"/>
+                    <connections>
+                        <segue destination="kcp-nT-rhJ" kind="show" identifier="toEmocoes" id="nKK-fT-6qy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1j-1j-qe2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -929,6 +932,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0W-OW-H9u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2980" y="-1522"/>
+        </scene>
+        <!--Emocoes View Controller-->
+        <scene sceneID="7GB-Gc-5BP">
+            <objects>
+                <viewController id="kcp-nT-rhJ" customClass="EmocoesViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7e-MC-LwX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UgN-9g-CNb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BwX-xp-Fu0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPt-Xf-bz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="1993"/>
         </scene>
     </scenes>
 </document>

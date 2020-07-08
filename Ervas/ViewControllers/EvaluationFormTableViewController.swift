@@ -53,7 +53,10 @@ class EvaluationFormTableViewController: UITableViewController {
         let vc = storyboard?.instantiateViewController(identifier: "ResultadosVC") as! ResultadosViewController
         vc.diagnosticos = checked
         presentOnRoot(with: vc)
-        
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -177,7 +180,6 @@ class EvaluationFormTableViewController: UITableViewController {
             cell.accessoryType = .checkmark
             
         }
-        
     }
     
     // Method to find a value within an array
@@ -193,21 +195,23 @@ class EvaluationFormTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) {
             // Unwrap the text from cell
+            
             if let textToRemove = cell.textLabel?.text! {
                 
                 var text = ""
                 // Converter o texto para o padrão
                 switch textToRemove {
+                // Ver qual valor está sendo adicionado em didSelectRowAt para saber qual remover
                 case "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)":
-                    text = "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)"
+                    text = "Síndrome Bi-Frio"
                 case "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)":
-                    text = "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)"
+                    text = "Síndrome Bi-Calor"
                 case "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)":
-                    text = "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)"
+                    text = "Síndrome Bi-Umidade"
                 case "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)":
-                    text = "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)"
+                    text = "Síndrome Bi-Vento"
                 case "Ósseo (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)":
-                    text = "Ósseo (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)"
+                    text = "Síndrome Bi-Ósseo"
                 case "Insônia":
                     text = "Deficiência de Xue e Yin do Coração e/ou Fogo"
                 case "Delírio":
