@@ -14,7 +14,7 @@ class EvaluationFormTableViewController: UITableViewController {
     //https://github.com/andreatoso/UIScrollView-Programmatically/blob/master/UIScrollView%20Programmatically/ViewController.swift MELHOR TUTORIAL SCROLLVIEW
     
     lazy var mySections: [SectionData] = {
-        let section1 = SectionData(title: "Síndromes BI", opcoes: "Frio", "Calor", "Umidade", "Vento", "Óssea")
+        let section1 = SectionData(title: "Síndromes Bi", opcoes: "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)", "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)", "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)", "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)", "Óssea (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)")
         let section2 = SectionData(title: "Sono", opcoes: "Insônia", "Delírio", "Excesso de sonhos e pesadelos", "Hipersônia")
         let section3 = SectionData(title: "Sede", opcoes: "Pouca sede", "Muita sede")
         let section4 = SectionData(title: "Urina", opcoes: "Turva e/ou começando a escurecer, muita espuma, muitas vezes no banheiro", "Urina escura, escassa, hematúria, areia na urina, urgência miccional, dor e ardência ao urinar", "Polaciúria, incontinência urinária, oligúria, edema, muita espuma, goteja c/ esforço")
@@ -71,7 +71,7 @@ class EvaluationFormTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = mySections[indexPath.section][indexPath.row]
-
+        
         
         cell.selectionStyle = .none
         if let selectedRows = tableView.indexPathsForSelectedRows,
@@ -89,6 +89,16 @@ class EvaluationFormTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) {
             switch indexPath {
+            case [0, 0]:
+                checked.append("Síndrome Bi-Frio")
+            case [0, 1]:
+                checked.append("Síndrome Bi-Calor")
+            case [0, 2]:
+                checked.append("Síndrome Bi-Umidade")
+            case [0, 3]:
+                checked.append("Síndrome Bi-Vento")
+            case [0, 4]:
+                checked.append("Síndrome Bi-Ósseo")
             case [1, 0]:
                 checked.append("Deficiência de Xue e Yin do Coração e/ou Fogo")
             case [1, 1]:
@@ -188,6 +198,16 @@ class EvaluationFormTableViewController: UITableViewController {
                 var text = ""
                 // Converter o texto para o padrão
                 switch textToRemove {
+                case "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)":
+                    text = "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)"
+                case "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)":
+                    text = "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)"
+                case "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)":
+                    text = "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)"
+                case "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)":
+                    text = "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)"
+                case "Ósseo (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)":
+                    text = "Ósseo (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)"
                 case "Insônia":
                     text = "Deficiência de Xue e Yin do Coração e/ou Fogo"
                 case "Delírio":
