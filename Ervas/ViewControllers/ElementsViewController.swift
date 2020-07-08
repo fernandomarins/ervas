@@ -24,6 +24,8 @@ class ElementsViewController: UIViewController {
         ElementsData(backgroundImage: #imageLiteral(resourceName: "emocoes"))
     ]
     
+    var selectedElement = ""
+    
     // Criando a collection view programatically
     fileprivate let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -79,14 +81,28 @@ extension ElementsViewController: UICollectionViewDelegateFlowLayout, UICollecti
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.item {
         case 0:
-            performSegue(withIdentifier: "toErvas", sender: self)
+            selectedElement = "FOGO - MOVIMENTO"
+            performSegue(withIdentifier: "toElement", sender: self)
         case 1:
-            performSegue(withIdentifier: "toOrgaos", sender: self)
+            selectedElement = "TERRA - ESTRUTURA"
+            performSegue(withIdentifier: "toElement", sender: self)
         case 2:
-            performSegue(withIdentifier: "toMeridianos", sender: self)
+            selectedElement = "METAL - DIREÇÃO"
+            performSegue(withIdentifier: "toElement", sender: self)
+        case 3:
+            selectedElement = "ÁGUA - FORÇA"
+            performSegue(withIdentifier: "toElement", sender: self)
+        case 4:
+            selectedElement = "MADEIRA - OBJETIVO"
+            performSegue(withIdentifier: "toElement", sender: self)
         default:
-            performSegue(withIdentifier: "toEmocoes", sender: self)
+            performSegue(withIdentifier: "toElement", sender: self)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let element = segue.destination as? ElementViewController
+        element?.element = selectedElement
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

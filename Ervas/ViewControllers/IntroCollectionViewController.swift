@@ -16,8 +16,8 @@ struct CustomData {
 
 class IntroCollectionViewController: UIViewController {
     
-    let date = Date()
-    let calendar = Calendar.current
+    lazy var date = Date()
+    lazy var calendar = Calendar.current
     
     fileprivate let data = [
         CustomData(backgroundImage: #imageLiteral(resourceName: "ervas")),

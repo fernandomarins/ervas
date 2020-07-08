@@ -19,6 +19,7 @@
 		552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FDB9824ABED100032FCF5 /* AddViewController.swift */; };
 		5537471224B63842005182E1 /* EmocoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537471124B63842005182E1 /* EmocoesViewController.swift */; };
 		5537471624B641EB005182E1 /* emocoesgrafico.png in Resources */ = {isa = PBXBuildFile; fileRef = 5537471524B641EB005182E1 /* emocoesgrafico.png */; };
+		5537471824B67B29005182E1 /* ElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537471724B67B29005182E1 /* ElementViewController.swift */; };
 		555961B224AFBB900050693F /* logo + nome.png in Resources */ = {isa = PBXBuildFile; fileRef = 555961B124AFBB900050693F /* logo + nome.png */; };
 		555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555961B324AFC3D10050693F /* OrgaosTableViewController.swift */; };
 		555961B624AFC6B40050693F /* DesarmoniasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */; };
@@ -77,6 +78,7 @@
 		552FDB9824ABED100032FCF5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		5537471124B63842005182E1 /* EmocoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmocoesViewController.swift; sourceTree = "<group>"; };
 		5537471524B641EB005182E1 /* emocoesgrafico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emocoesgrafico.png; sourceTree = "<group>"; };
+		5537471724B67B29005182E1 /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
 		555961B124AFBB900050693F /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
 		555961B324AFC3D10050693F /* OrgaosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgaosTableViewController.swift; sourceTree = "<group>"; };
 		555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesarmoniasTableViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				55E11ED724B3C994002DF041 /* MeridianosViewController.swift */,
 				552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */,
 				552FBF3824B4CC8600E6B93E /* ElementsViewController.swift */,
+				5537471724B67B29005182E1 /* ElementViewController.swift */,
 				5537471124B63842005182E1 /* EmocoesViewController.swift */,
 				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
 				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
@@ -528,6 +531,7 @@
 				555961B624AFC6B40050693F /* DesarmoniasTableViewController.swift in Sources */,
 				557B20B424AA1F92006F0A30 /* Colors.swift in Sources */,
 				555961B424AFC3D10050693F /* OrgaosTableViewController.swift in Sources */,
+				5537471824B67B29005182E1 /* ElementViewController.swift in Sources */,
 				555961B824AFD5750050693F /* TratamentoViewController.swift in Sources */,
 				552FDB9924ABED100032FCF5 /* AddViewController.swift in Sources */,
 				5537471224B63842005182E1 /* EmocoesViewController.swift in Sources */,

@@ -882,6 +882,7 @@
                     <navigationItem key="navigationItem" id="HUq-Bi-RjI"/>
                     <connections>
                         <segue destination="kcp-nT-rhJ" kind="show" identifier="toEmocoes" id="nKK-fT-6qy"/>
+                        <segue destination="gw8-Cs-X6T" kind="show" identifier="toElement" id="QDs-YM-tEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1j-1j-qe2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -948,6 +949,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPt-Xf-bz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2980" y="1993"/>
+        </scene>
+        <!--Element View Controller-->
+        <scene sceneID="Kv3-bP-lQW">
+            <objects>
+                <viewController id="gw8-Cs-X6T" customClass="ElementViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k6a-W6-huF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rcF-8u-oVt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TSa-sf-IMF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bX-dM-ZuP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="2674"/>
         </scene>
     </scenes>
 </document>
