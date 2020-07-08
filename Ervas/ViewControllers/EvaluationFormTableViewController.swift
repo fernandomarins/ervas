@@ -14,16 +14,16 @@ class EvaluationFormTableViewController: UITableViewController {
     //https://github.com/andreatoso/UIScrollView-Programmatically/blob/master/UIScrollView%20Programmatically/ViewController.swift MELHOR TUTORIAL SCROLLVIEW
     
     lazy var mySections: [SectionData] = {
-        let section1 = SectionData(title: "Síndromes Bi", opcoes: "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)", "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)", "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)", "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)", "Óssea (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)")
+        let section1 = SectionData(title: "Síndromes Bi", opcoes: "Frio (piora com o frio, com o gelo, com o repouso, sensação de frio local)", "Calor (piora com o calor, com o movimento, calor local, vermelhidão, coceira)", "Umidade (tez brilhante, urina amarelada, inchaço e dor local, dor fixa)", "Vento (dores migratórias, câimbras, tremores, sensibilidade ao vento)", "Ósseo (princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)")
         let section2 = SectionData(title: "Sono", opcoes: "Insônia", "Delírio", "Excesso de sonhos e pesadelos", "Hipersônia")
         let section3 = SectionData(title: "Sede", opcoes: "Pouca sede", "Muita sede")
         let section4 = SectionData(title: "Urina", opcoes: "Turva e/ou começando a escurecer, muita espuma, muitas vezes no banheiro", "Urina escura, escassa, hematúria, areia na urina, urgência miccional, dor e ardência ao urinar", "Polaciúria, incontinência urinária, oligúria, edema, muita espuma, goteja c/ esforço")
         let section5 = SectionData(title: "Intestinos", opcoes: "Evacuações Ressecadas de Princípio a Fim e Escassas (2 em 2 dias ou mais)", "Evacuação rotineira com fezes pastosas, líquidas, quebradiças", "Fezes com tampão ressecado e pastoso a seguir", "Fezes com Mucos")
-        let section6 = SectionData(title: "Térmica", opcoes: "Perfil friorento - frio nas mãos e pés, frio na barriga e região lombar, pernas, dorme encolhido", "Perfil calorento - mãos e pés quentes, se descobre para dormir, transpira muito", "Misto - mãos quentes e pés frios, mãos transpiram facilmente")
+        let section6 = SectionData(title: "Térmica", opcoes: "Perfil friorento - frio nas mãos e pés, frio na barriga e região lombar, pernas, dorme encolhido", "Perfil calorento - mãos e pés quentes, se descobre para dormir, transpira muito", "Misto - Mãos quentes e pés frios, mãos transpiram facilmente")
         let section7 = SectionData(title: "Menstruação", opcoes: "Adianta (8 a 10 dias)", "Atrasa (8 a 10 dias)", "Ora adianta, ora atrasa", "TPM com distensão abdominal, displasia mamária, irritabilidade, amenorréia, dismenorréia, pouco sangramento", "TPM com dismenorréia com sangramento escuro, coágulos, fisgadas na região do ovário no período ovulatório")
         let section8 = SectionData(title: "Corrimentos", opcoes: "Brancos ou transparentes, abundantes", "Amarelados, viscoso, malcheirosos, com pruridos", "Vermelhos, ininterruptos, leve odor", "Escuros, sensação de Frio na barriga e dolorimento lombar")
         let section9 = SectionData(title: "Digestão", opcoes: "Muitos gases, pouco apetite, distensão abdominal, instabilidade nas evacuações, ora com fezes uniformes, ora fezes soltas, sem componente emocional", "Diarréia matinal rotineira", "Muitos gases, perda de apetite, instabilidade nas evacuações, ora com fezes uniformes, ora fezes soltas, apenas quando ocorrem problemas emocionais", "Azia, aftas, queimação, boca e lábios secos", "Dor e sensação de Frio na região epigástrica, melhoradas pelo Calor, ausência de sede, vômito de líquidos claros (tipo água), ruídos na região epigástrica", "Arrotos de mau cheiro, regurgitações ácidas, fezes com muito mal cheiro", "Dor ardente no epigástrio, vômitos de líquidos azedos (Refluxo), dor, inchaço ou fragilidade capilar das gengivas com sangramentos fáceis, mau hálito, enxaqueca frontal", "Dor aguda com sensação de facada, com possível irradiação para a região dorsal, agravada pela pressão local, pela alimentação, evoluindo junto com a magreza, tez do rosto escurecendo, com possível hematêmese ou melena")
-        let section10 = SectionData(title: "Sangue", opcoes: "Câimbras, tiques palpebrais, espasmos migratórios pelo corpo, Bruxismo, Enxaqueca Tensional, Trapézio Endurecido", "Tonteira ao se Levantar Rápido, Enxaqueca Difusa ao Final do Dia, Unhas Fracas, Queda de Cabelos, Manchas no Campo Visual, Histórico de Anemia em Exames de Sangue", "Aumento do Apetite no Período Menstrual, Metrorragia que vem diminuindo com o passar dos anos, Fraqueza no Período Menstrual")
+        let section10 = SectionData(title: "Sangue", opcoes: "Câimbras, tiques palpebrais, espasmos migratórios pelo corpo, Bruxismo, Enxaqueca Tensional, Trapézio Endurecido", "Tonteira ao se Levantar Rápido, Enxaqueca Difusa ao Final do Dia, Unhas Fracas, Queda de Cabelos, Manchas no Campo Visual, Histórico de Anemia em Exames de Sangue", "Aumento do apetite no período menstrual, metrorragia que vem diminuindo com o passar dos anos, fraqueza no período menstrual")
         
         return [section1, section2, section3, section4, section5, section6, section7, section8, section9, section10]
     }()
@@ -127,11 +127,11 @@ class EvaluationFormTableViewController: UITableViewController {
             case [4, 2]:
                 checked.append("Deficiência de Qi do Baço")
             case [4, 3]:
-                checked.append("Calor-Umidade nos Intestinos - Importante Aprofundar nos Sinais")
+                checked.append("Calor-Umidade nos Intestinos – Importante Aprofundar nos Sinais")
             case [5, 0]:
                 checked.append("Deficiência de Yang dos Rins")
             case [5, 1]:
-                checked.append("Deficiência de Yin dos Rins)")
+                checked.append("Deficiência de Yin dos Rins")
             case [5, 2]:
                 checked.append("Estagnação do Qi do Fígado")
             case [6, 0]:
@@ -172,7 +172,7 @@ class EvaluationFormTableViewController: UITableViewController {
                 checked.append("Agitação do Vento do Fígado por Deficiência de Sangue")
             case [9, 1]:
                 checked.append("Deficiência de Sangue do Fígado")
-            case [9, 0]:
+            case [9, 2]:
                 checked.append("Deficiência de Sangue do Fígado")
             default:
                 checked.append("")
@@ -202,15 +202,15 @@ class EvaluationFormTableViewController: UITableViewController {
                 // Converter o texto para o padrão
                 switch textToRemove {
                 // Ver qual valor está sendo adicionado em didSelectRowAt para saber qual remover
-                case "Frio (Piora com o Frio, com o gelo, com o repouso, sensação de Frio local)":
+                case "Frio (piora com o frio, com o gelo, com o repouso, sensação de frio local)":
                     text = "Síndrome Bi-Frio"
-                case "Calor (Piora com o Calor, com o Movimento, Calor local, vermelhidão, coceira)":
+                case "Calor (piora com o calor, com o movimento, calor local, vermelhidão, coceira)":
                     text = "Síndrome Bi-Calor"
-                case "Umidade (Tez brilhante, urina amarelada, inchaço e dor local, dor fixa)":
+                case "Umidade (tez brilhante, urina amarelada, inchaço e dor local, dor fixa)":
                     text = "Síndrome Bi-Umidade"
-                case "Vento (Dores migratória, câimbras, tremores, sensibilidade ao Vento)":
+                case "Vento (dores migratórias, câimbras, tremores, sensibilidade ao vento)":
                     text = "Síndrome Bi-Vento"
-                case "Ósseo (Princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)":
+                case "Ósseo (princípio de deformação articular, inchaços persistentes, enfraquecimento generalizado)":
                     text = "Síndrome Bi-Ósseo"
                 case "Insônia":
                     text = "Deficiência de Xue e Yin do Coração e/ou Fogo"
@@ -221,7 +221,9 @@ class EvaluationFormTableViewController: UITableViewController {
                 case "Hipersônia":
                     text = "Deficiência de Yang do Baço e/ou Rins"
                 case "Pouca sede":
-                    text = "Muita sede"
+                    text = "Umidade-Frio no Baço"
+                case "Muita sede":
+                    text = "Calor nos 3 Aquecedores e/ou Deficiência de Yin dos Rins"
                 case "Turva e/ou começando a escurecer, muita espuma, muitas vezes no banheiro":
                     text = "Frio-Umidade no Baço e Rins"
                 case "Urina escura, escassa, hematúria, areia na urina, urgência miccional, dor e ardência ao urinar":
@@ -280,7 +282,7 @@ class EvaluationFormTableViewController: UITableViewController {
                     text = "Agitação do Vento do Fígado por Deficiência de Sangue"
                 case "Tonteira ao se Levantar Rápido, Enxaqueca Difusa ao Final do Dia, Unhas Fracas, Queda de Cabelos, Manchas no Campo Visual, Histórico de Anemia em Exames de Sangue":
                     text = "Deficiência de Sangue do Fígado"
-                case "Aumento do Apetite no Período Menstrual, Metrorragia que vem diminuindo com o passar dos anos, Fraqueza no Período Menstrual":
+                case "Aumento do apetite no período menstrual, metrorragia que vem diminuindo com o passar dos anos, fraqueza no período menstrual":
                     text = "Deficiência de Sangue do Fígado"
                 default:
                     text = ""
