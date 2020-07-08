@@ -14,11 +14,19 @@ class ResultadosViewController: UIViewController {
     let scrollView = UIScrollView()
     let contentView = UIView()
     
+    var diagnosticos = [String]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        label1.text = returnDiagnostico(array: diagnosticos)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         setupScrollView()
         setupViews()
+        
         title = "DIAGNÓSTICO"
         
         let closeButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(closeVC))
@@ -29,6 +37,17 @@ class ResultadosViewController: UIViewController {
     
     @objc func closeVC() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    // Receber o array e colocar todos numa única String
+    func returnDiagnostico(array: Array<String>) -> String {
+        var text = ""
+        for item in array {
+            // Adicionar o \n\n para dar duas linhas de espaço
+            text += "\(item)\n\n"
+        }
+
+        return text
     }
     
     func setupScrollView(){
