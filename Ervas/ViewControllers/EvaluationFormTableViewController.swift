@@ -71,6 +71,7 @@ class EvaluationFormTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = mySections[indexPath.section][indexPath.row]
+
         
         cell.selectionStyle = .none
         if let selectedRows = tableView.indexPathsForSelectedRows,
@@ -81,8 +82,6 @@ class EvaluationFormTableViewController: UITableViewController {
         }
         
         cell.textLabel?.numberOfLines = 0
-        
-        
         
         return cell
     }

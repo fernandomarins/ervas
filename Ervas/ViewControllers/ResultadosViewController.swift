@@ -72,13 +72,14 @@ class ResultadosViewController: UIViewController {
         contentView.addSubview(label1)
         label1.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         label1.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
-        label1.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
+        label1.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 4/5).isActive = true
+        label1.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         
-        contentView.addSubview(label2)
-        label2.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-        label2.topAnchor.constraint(equalTo: label1.bottomAnchor, constant: 25).isActive = true
-        label2.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
-        label2.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+//        contentView.addSubview(label2)
+//        label2.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+//        label2.topAnchor.constraint(equalTo: label1.bottomAnchor, constant: 25).isActive = true
+//        label2.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 3/4).isActive = true
+//        label2.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }
     
     let label1: UILabel = {
@@ -88,6 +89,7 @@ class ResultadosViewController: UIViewController {
         label.sizeToFit()
         label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "HelveticaNeue-Bold", size: 20)
         return label
     }()
     
