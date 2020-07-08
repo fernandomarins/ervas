@@ -149,18 +149,11 @@
 			children = (
 				5503518824B024FC00A9D5F6 /* IntroCollectionViewController.swift */,
 				55E11ED724B3C994002DF041 /* MeridianosViewController.swift */,
-				552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */,
-				552FBF3824B4CC8600E6B93E /* ElementsViewController.swift */,
-				5537471724B67B29005182E1 /* ElementViewController.swift */,
+				55EA9A7A24B68A6D006E46C2 /* ERVAS */,
+				55EA9A7B24B68A7B006E46C2 /* ELEMENTOS */,
 				5537471124B63842005182E1 /* EmocoesViewController.swift */,
-				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
-				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
-				555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */,
-				555961B724AFD5750050693F /* TratamentoViewController.swift */,
-				55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */,
-				552FDB9824ABED100032FCF5 /* AddViewController.swift */,
-				552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */,
-				552FBF3C24B52AC000E6B93E /* ResultadosViewController.swift */,
+				55EA9A7824B68A34006E46C2 /* ÓRGÃOS E DESARMONIAS */,
+				55EA9A7924B68A4E006E46C2 /* AVALIAÇÃO */,
 				559004A624AD1170008A3DD7 /* Extensions.swift */,
 			);
 			path = ViewControllers;
@@ -255,6 +248,47 @@
 				5537471524B641EB005182E1 /* emocoesgrafico.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		55EA9A7824B68A34006E46C2 /* ÓRGÃOS E DESARMONIAS */ = {
+			isa = PBXGroup;
+			children = (
+				555961B324AFC3D10050693F /* OrgaosTableViewController.swift */,
+				555961B524AFC6B40050693F /* DesarmoniasTableViewController.swift */,
+				555961B724AFD5750050693F /* TratamentoViewController.swift */,
+			);
+			name = "ÓRGÃOS E DESARMONIAS";
+			path = "ÓRGÃOS E DESARMONIAS";
+			sourceTree = "<group>";
+		};
+		55EA9A7924B68A4E006E46C2 /* AVALIAÇÃO */ = {
+			isa = PBXGroup;
+			children = (
+				552FBF3A24B4E22B00E6B93E /* EvaluationFormTableViewController.swift */,
+				552FBF3C24B52AC000E6B93E /* ResultadosViewController.swift */,
+			);
+			name = "AVALIAÇÃO";
+			path = "AVALIAÇÃO";
+			sourceTree = "<group>";
+		};
+		55EA9A7A24B68A6D006E46C2 /* ERVAS */ = {
+			isa = PBXGroup;
+			children = (
+				552FBF3624B4CA9A00E6B93E /* ErvasViewController.swift */,
+				55045B8C24A9533400715FB2 /* DisplayHerbViewController.swift */,
+				55045B8E24A9707000715FB2 /* MoreInfoViewController.swift */,
+				552FDB9824ABED100032FCF5 /* AddViewController.swift */,
+			);
+			path = ERVAS;
+			sourceTree = "<group>";
+		};
+		55EA9A7B24B68A7B006E46C2 /* ELEMENTOS */ = {
+			isa = PBXGroup;
+			children = (
+				552FBF3824B4CC8600E6B93E /* ElementsViewController.swift */,
+				5537471724B67B29005182E1 /* ElementViewController.swift */,
+			);
+			path = ELEMENTOS;
 			sourceTree = "<group>";
 		};
 		A50EC987A9BF47C95484CAC1 /* Pods */ = {
