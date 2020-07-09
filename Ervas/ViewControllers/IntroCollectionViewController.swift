@@ -24,7 +24,7 @@ class IntroCollectionViewController: UIViewController {
         CustomData(backgroundImage: #imageLiteral(resourceName: "padrões")),
         CustomData(backgroundImage: #imageLiteral(resourceName: "med")),
         CustomData(backgroundImage: #imageLiteral(resourceName: "elementos")),
-        CustomData(backgroundImage: #imageLiteral(resourceName: "ficha"))
+        CustomData(backgroundImage: #imageLiteral(resourceName: "FICHA"))
     ]
     
     fileprivate let collectionView: UICollectionView = {

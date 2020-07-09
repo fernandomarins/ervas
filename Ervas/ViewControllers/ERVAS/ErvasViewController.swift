@@ -25,10 +25,10 @@ class ErvasViewController: UITableViewController {
         ref = Database.database().reference()
         
         // Allowing the offline storage
-        Database.database().isPersistenceEnabled = true
+//        Database.database().isPersistenceEnabled = true
         
         // Keeping the database synced
-        ref?.keepSynced(true)
+//        ref?.keepSynced(true)
         
         databaseHandle = ref?.child("ervas").observe(.childAdded, with: { (snapshot) in
             
