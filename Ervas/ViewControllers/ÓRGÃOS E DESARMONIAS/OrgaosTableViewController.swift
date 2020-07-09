@@ -14,6 +14,16 @@ class OrgaosTableViewController: UITableViewController {
     "Coração", "Intestino Delgado", "Pulmão", "Intestino Grosso", "Síndromes Bi"]
     
     var orgaoSelected: String = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "ÓRGÃOS"
+        
+        let backButton = UIBarButtonItem(title: "ÓRGÃOS", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
+        // Trocando nome do back buttom da view que será pushed
+        navigationItem.backBarButtonItem = backButton
+    }
 
     // MARK: - Table view data source
 

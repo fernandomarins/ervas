@@ -1,16 +1,15 @@
 //
-//  MeridianosViewController.swift
+//  EmocoesViewController.swift
 //  Ervas
 //
-//  Created by Fernando Augusto de Marins on 06/07/20.
+//  Created by Fernando Augusto de Marins on 08/07/20.
 //  Copyright © 2020 Fernando Augusto de Marins. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-// https://medium.com/@raj.amsarajm93/ios-swift-tutorial-imageview-zooming-and-horizontal-paging-dca0acb0165e
-
-class MeridianosViewController: UIViewController {
+class EmocoesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -21,19 +20,19 @@ class MeridianosViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "MERIDIANOS"
-    
+        title = "EMOÇÕES"
+        
         let viewHeight: CGFloat = view.bounds.size.height
         let viewWidth: CGFloat = view.bounds.size.width
         
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: viewWidth, height: viewHeight))
         scrollView.isPagingEnabled = true
         
-        let images = ["meridiano2.jpg","meridiano3.jpg","meridiano4.jpg"]
+        let images = ["emocoesgrafico.png"]
         var xPostion: CGFloat = 0
         
         for image in images {
@@ -45,18 +44,34 @@ class MeridianosViewController: UIViewController {
             imageView.imageScrollViewDelegate = self
             imageView.imageContentMode = .aspectFit
             imageView.initialOffset = .center
-            imageView.display(image: UIImage(named: image)!)
+            DispatchQueue.main.async {
+                imageView.display(image: UIImage(named: image)!)
+            }
             
             view.addSubview(imageView)
             scrollView.addSubview(view)
         }
         scrollView.contentSize = CGSize(width: xPostion, height: viewHeight)
         view.addSubview(scrollView)
+        
+        let backButton = UIBarButtonItem(title: "EMOÇÕES", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
+        // Trocando nome do back buttom da view que será pushed
+        navigationItem.backBarButtonItem = backButton
+        
+        let open = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(openListaEmocoes))
+        open.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = open
     }
-
+    
+    @objc func openListaEmocoes() {
+        performSegue(withIdentifier: "toListaEmocoes", sender: self)
+    }
+    
 }
 
-extension MeridianosViewController: ImageViewZoomDelegate {
+extension EmocoesViewController: ImageViewZoomDelegate {
     func imageScrollViewDidChangeOrientation(imageViewZoom: ImageViewZoom) {
         print("Did change orientation")
     }

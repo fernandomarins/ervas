@@ -17,6 +17,13 @@ class DesarmoniasTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        title = "DESARMONIAS"
+        
+        let backButton = UIBarButtonItem(title: "DESARMONIAS", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
+        // Trocando nome do back buttom da view que será pushed
+        navigationItem.backBarButtonItem = backButton
+        
         desarmonias.append(contentsOf: setDesarmonias(orgao: orgao))
     }
 
