@@ -945,6 +945,9 @@
                         <viewLayoutGuide key="safeArea" id="UgN-9g-CNb"/>
                     </view>
                     <navigationItem key="navigationItem" id="BwX-xp-Fu0"/>
+                    <connections>
+                        <segue destination="c8N-z6-QNx" kind="show" identifier="toListaEmocoes" id="cLB-3n-Xxp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QPt-Xf-bz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -965,6 +968,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bX-dM-ZuP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2980" y="2674"/>
+        </scene>
+        <!--Lista Emocoes View Controller-->
+        <scene sceneID="8R3-Bh-2Dv">
+            <objects>
+                <viewController id="c8N-z6-QNx" customClass="ListaEmocoesViewController" customModule="Ervas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gci-38-QUS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cT8-9w-2EZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H2u-2o-4Uw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ye7-oK-SpS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3741" y="1993"/>
         </scene>
     </scenes>
 </document>

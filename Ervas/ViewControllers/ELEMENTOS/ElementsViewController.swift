@@ -96,7 +96,7 @@ extension ElementsViewController: UICollectionViewDelegateFlowLayout, UICollecti
             selectedElement = "MADEIRA - OBJETIVO"
             performSegue(withIdentifier: "toElement", sender: self)
         default:
-            performSegue(withIdentifier: "toElement", sender: self)
+            performSegue(withIdentifier: "toEmocoes", sender: self)
         }
     }
     

@@ -52,7 +52,6 @@ class MeridianosViewController: UIViewController {
         }
         scrollView.contentSize = CGSize(width: xPostion, height: viewHeight)
         view.addSubview(scrollView)
-
     }
 
 }

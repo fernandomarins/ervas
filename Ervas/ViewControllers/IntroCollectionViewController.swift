@@ -78,6 +78,7 @@ class IntroCollectionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // ADICIONAR ALGO PARA MOSTRAR A ESTAÇÃO E O ELEMENTO MAIS UTILIZADO
         refreshTime()
     }
     

@@ -42,6 +42,7 @@
 		55E11EDF24B3CA18002DF041 /* meridiano4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EDB24B3CA18002DF041 /* meridiano4.jpg */; };
 		55E11EE624B3F46A002DF041 /* meridiano2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE424B3F46A002DF041 /* meridiano2.jpg */; };
 		55E11EE724B3F46A002DF041 /* meridiano3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55E11EE524B3F46A002DF041 /* meridiano3.jpg */; };
+		55EA9A7D24B765B4006E46C2 /* ListaEmocoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA9A7C24B765B4006E46C2 /* ListaEmocoesViewController.swift */; };
 		C21501364413CF2C3E5FAF44 /* Pods_ErvasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B55BEFE625F5DDBE304B49 /* Pods_ErvasTests.framework */; };
 		CFBC0A6F10E4FD640C21AF48 /* Pods_Ervas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8659CA4978E83D78AF125E /* Pods_Ervas.framework */; };
 /* End PBXBuildFile section */
@@ -108,6 +109,7 @@
 		55E11EE424B3F46A002DF041 /* meridiano2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano2.jpg; sourceTree = "<group>"; };
 		55E11EE524B3F46A002DF041 /* meridiano3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meridiano3.jpg; sourceTree = "<group>"; };
 		55E3DC1624AB7744007DDE76 /* logo + nome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo + nome.png"; sourceTree = "<group>"; };
+		55EA9A7C24B765B4006E46C2 /* ListaEmocoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaEmocoesViewController.swift; sourceTree = "<group>"; };
 		5F1672ABD0F39EEC578C9AC5 /* Pods_Ervas_ErvasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ervas_ErvasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCD0A41F1A9176A3B96453E /* Pods-ErvasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ErvasTests.release.xcconfig"; path = "Target Support Files/Pods-ErvasTests/Pods-ErvasTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CABA1DAC56B57F90BA1B98B /* Pods-Ervas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ervas.release.xcconfig"; path = "Target Support Files/Pods-Ervas/Pods-Ervas.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +153,7 @@
 				55E11ED724B3C994002DF041 /* MeridianosViewController.swift */,
 				55EA9A7A24B68A6D006E46C2 /* ERVAS */,
 				55EA9A7B24B68A7B006E46C2 /* ELEMENTOS */,
-				5537471124B63842005182E1 /* EmocoesViewController.swift */,
+				55EA9A7E24B7678F006E46C2 /* EMOÇÕES */,
 				55EA9A7824B68A34006E46C2 /* ÓRGÃOS E DESARMONIAS */,
 				55EA9A7924B68A4E006E46C2 /* AVALIAÇÃO */,
 				559004A624AD1170008A3DD7 /* Extensions.swift */,
@@ -289,6 +291,16 @@
 				5537471724B67B29005182E1 /* ElementViewController.swift */,
 			);
 			path = ELEMENTOS;
+			sourceTree = "<group>";
+		};
+		55EA9A7E24B7678F006E46C2 /* EMOÇÕES */ = {
+			isa = PBXGroup;
+			children = (
+				5537471124B63842005182E1 /* EmocoesViewController.swift */,
+				55EA9A7C24B765B4006E46C2 /* ListaEmocoesViewController.swift */,
+			);
+			name = "EMOÇÕES";
+			path = "EMOÇÕES";
 			sourceTree = "<group>";
 		};
 		A50EC987A9BF47C95484CAC1 /* Pods */ = {
@@ -579,6 +591,7 @@
 				552FBF3924B4CC8600E6B93E /* ElementsViewController.swift in Sources */,
 				5503518924B024FC00A9D5F6 /* IntroCollectionViewController.swift in Sources */,
 				552FBF3724B4CA9A00E6B93E /* ErvasViewController.swift in Sources */,
+				55EA9A7D24B765B4006E46C2 /* ListaEmocoesViewController.swift in Sources */,
 				558D086624A94C080052C1EB /* Ervas.xcdatamodeld in Sources */,
 				55E11ED624B3C953002DF041 /* ImageViewZoom.swift in Sources */,
 				558D089124A94EDF0052C1EB /* ErvasList.swift in Sources */,

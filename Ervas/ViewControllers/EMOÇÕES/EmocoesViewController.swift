@@ -20,12 +20,12 @@ class EmocoesViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "ELEMENTOS"
-    
+        title = "EMOÇÕES"
+        
         let viewHeight: CGFloat = view.bounds.size.height
         let viewWidth: CGFloat = view.bounds.size.width
         
@@ -44,16 +44,31 @@ class EmocoesViewController: UIViewController {
             imageView.imageScrollViewDelegate = self
             imageView.imageContentMode = .aspectFit
             imageView.initialOffset = .center
-            imageView.display(image: UIImage(named: image)!)
+            DispatchQueue.main.async {
+                imageView.display(image: UIImage(named: image)!)
+            }
             
             view.addSubview(imageView)
             scrollView.addSubview(view)
         }
         scrollView.contentSize = CGSize(width: xPostion, height: viewHeight)
         view.addSubview(scrollView)
-
+        
+        let backButton = UIBarButtonItem(title: "EMOÇÕES", style: .plain, target: nil, action: nil)
+        backButton.tintColor = .white
+        // Trocando nome do back buttom da view que será pushed
+        navigationItem.backBarButtonItem = backButton
+        
+        let open = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(openListaEmocoes))
+        open.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = open
     }
-
+    
+    @objc func openListaEmocoes() {
+        performSegue(withIdentifier: "toListaEmocoes", sender: self)
+    }
+    
 }
 
 extension EmocoesViewController: ImageViewZoomDelegate {
